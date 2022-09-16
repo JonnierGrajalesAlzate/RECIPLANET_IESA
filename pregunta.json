@@ -1,0 +1,30 @@
+[
+    {
+        "categoria":"Reciclaje y Mediambiente",
+        "pregunta":"¿En cual contenedor van estos objetos?",
+        "respuesta":"Verde",
+        "incorrecta1": "ninguna",
+        "incorrecta2": "Blanca",
+        "incorrecta3": "Negra",
+        "imagen": "https://cdn2.cocinadelirante.com/sites/default/files/images/2019/11/trucos-para-detectar-que-un-alimento-esta-en-mal-estado.jpg",
+        "objetfit": "cover"
+    },
+    {
+        "categoria":"Reciclaje y Mediambiente",
+        "pregunta":"¿En cual contenedor van estos objetos?",
+        "respuesta":"Negra",
+        "incorrecta1": "roja",
+        "incorrecta2": "Blanca",
+        "incorrecta3": "verde",
+        "imagen": "https://previews.123rf.com/images/korarkar/korarkar1709/korarkar170900219/87016374-tazones-sucios-y-vac%C3%ADos-y-servilleta-de-papel-despu%C3%A9s-del-final-de-la-comida.jpg"
+    },
+    {
+    "categoria":"Reciclaje y Mediambiente",
+    "pregunta":"¿En cual contenedor van estos objetos?",
+    "respuesta":"blanca",
+    "incorrecta1": "ninguna",
+    "incorrecta2": "negra",
+    "incorrecta3": "Negra",
+    "imagen": "https://lanocheenvino.com/wp-content/uploads/color-botellas-rec-870x490.jpg"
+    }
+]

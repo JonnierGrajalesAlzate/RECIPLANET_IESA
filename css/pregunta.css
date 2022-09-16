@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: steelblue;
+    background-image: url(https://besthqwallpapers.com/Uploads/19-8-2020/139935/thumb2-blue-bubbles-background-blue-creative-background-blue-circles-background-abstraction.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 120%;
+  }
+
+  .menu-horizontal{
+    border-radius: 20px;
+    height: 60px;
+    width: 80%;
+    list-style: none;
+ 
+}
+
+.menu-horizontal > li a{
+    padding: 15px 20px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    float: left;
+}
+
+#selector{
+   background: rgb(154, 173, 224);
+   color: rgb(0, 0, 0);
+   font-family: 'Lobster', cursive;
+   border-radius: 20px;
+}
+
+#selector:hover{
+    font-size: 27px;
+    color: black;
+    background: #fcff5c;
+    border-radius: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+  
+  #encabezado {
+    width: 80vw;
+    min-height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(216, 216, 216);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .regresar{
+    background-color: aqua;
+    border-radius: 50px;
+  }
+  
+  .opcion {
+    width: 80vw;
+    background: white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .opcion:hover{
+       background: rgb(255, 187, 0);
+       font-size: 18px;
+       font-weight: 30px;
+       transition: all 0.3s ease;
+  }
+  

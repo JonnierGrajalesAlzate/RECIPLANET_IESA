@@ -1,0 +1,141 @@
+*{
+    transition: all 0.3s;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../asseds/reci.png);
+}
+
+.menu-horizontal{
+    background-color:  rgb(14, 24, 51);
+    height: 100px;
+    width: 100%;
+    list-style: none;
+ 
+}
+
+.menu-horizontal > li a{
+    display: block;
+    padding: 15px 20px;
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    float: left;
+}
+
+#selector{
+   background: rgb(14, 24, 51);
+   color: white;
+   font-family: 'Lobster', cursive;
+}
+
+#selector:hover{
+    font-size: 57px;
+    color: black;
+    background: #fcff5c;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.todo{
+    width: 90%;
+    height: 90%;
+    margin: 5% 5%;
+    background-color:rgb(210, 235, 255);
+}
+
+
+
+.perfil{
+    
+    height: 97%;
+
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.frase{
+    font-size: 30px;
+    font-family: fantasy;
+    display: inline-block;
+    text-align: center;
+    margin-left: 50px;
+    
+
+}
+
+
+h1{
+     font-family: 'Lobster', cursive;
+     font-size: 30px;
+     margin-left: 43%;
+    
+    }
+
+.logo{
+    background-color: blueviolet;
+    margin-left: 45%;
+    align-content: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.imagen{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    
+}
+
+
+
+.info{
+    width: 50%;
+    height: 470px;
+    margin-left: 20px;
+    text-align: center;
+    display: inline-block;
+    align-content: right;
+
+}
+
+.info h2{
+    font-size: 38px;
+    font-family: 'Lobster', cursive;
+    margin: 20px;
+}
+
+.info .name{
+    display: block;
+    
+}
+
+.info li{
+    list-style: none;
+    margin-left: 10px;
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.stunt{
+    width: 30%;
+    height: 450px;
+    margin-right: 25px;
+    text-align: center;
+    align-content: left;
+    float: right;
+   
+}
+
+h2{
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+    margin:40px;
+    text-align: center;
+
+}

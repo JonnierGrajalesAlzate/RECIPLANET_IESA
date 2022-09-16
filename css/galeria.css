@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2? family= Indie+Flower & display=swap');
+
+*{
+    transition: all 0.3s;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    background-color: rgb(123, 204, 123);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.menu-horizontal{
+    background-color:  rgb(14, 24, 51);
+    height: 100px;
+    width: 100%;
+    list-style: none;
+ 
+}
+
+.menu-horizontal > li a{
+    display: block;
+    padding: 15px 20px;
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    float: left;
+}
+
+#selector{
+   background: rgb(14, 24, 51);
+   color: white;
+   font-family: 'Lobster', cursive;
+}
+
+#selector:hover{
+    font-size: 57px;
+    color: black;
+    background: #fcff5c;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+/*cards*/
+
+.contenedor {
+    max-width: 800px;
+    box-shadow: 20px 30px 20px #fbff00, 20px 30px 20px #14640a;
+    margin: 5% auto;
+    padding: 20px;
+    background-color: rgb(148, 175, 166);
+    border-radius: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+    animation: reci 2.5s ease;
+  }
+
+  @keyframes reci{
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+  }
+
+  100%{
+      opacity: 1;
+      transform: translateX(0);
+  }
+
+  }
+  
+  .texto-reciplanet {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 50px;
+    text-shadow:  2px 2px 12px rgb(56, 233, 20), -6px -6px 12px rgb(0, 90, 102);
+  }
+  
+  .reciplanet-galeria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .reciplanet-galeria div > img {
+    max-width: 100%;
+    height: 200px;
+    width: 200px;
+    display: block;
+  }
+  
+  .reciplanet-galeria div {
+    margin: 10px;
+    flex-basis: 180px;
+    box-shadow: 0px 15px 20px #fcff5c, 0px 15px 10px #000000;
+    
+  }
+
+  .reci{
+   
+    border: solid 4px #000000;
+  }
+
+  .reci h2{
+    font-size: 30px;
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    text-decoration: double;
+}
+
+
+.reci h4{
+  transition: flex 0.3 ease-in 0.4s;
+  font-size: 20px;
+}
+
+
+  @media only screen and (max-width: 480px) {
+    .reciplanet-galeria {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .lightbox > div {
+      margin-bottom: 10px;
+    }
+  }
+
+

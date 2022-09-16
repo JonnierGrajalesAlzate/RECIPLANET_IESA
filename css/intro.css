@@ -1,0 +1,60 @@
+body{
+    height: 96vh;
+        width: 97vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+        background-image: url(../assets/reci-1.png);
+        transform: translateX(30px);
+}
+
+.menu{
+    display: flex;
+    float: right;
+    justify-content: center;
+    padding: 5px 5px;
+    width: 100vw;
+    
+    
+}
+
+
+.botones{
+    float: right;
+    display: flex;
+    margin-right: 20px;
+
+}
+
+
+.submitBtn {
+    margin-left: auto;
+    padding: 10px 20px;
+    border: none;
+    background-color: rgba(161, 150, 161, 0.555);
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+    border: 3px solid white;
+  }
+
+  .submitBtn1 {
+    margin-left: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: white;
+    color: gray;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+    border: 3px solid white;
+  }
+  
+  
+  .submitBtn:hover {
+    background-color:  rgba(58, 56, 58, 0.555);
+   
+  }

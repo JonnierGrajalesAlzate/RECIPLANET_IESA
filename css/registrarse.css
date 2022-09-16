@@ -1,0 +1,172 @@
+*{
+    transition: all 0.3s;
+    box-sizing: border-box;
+    margin: 0;
+}
+  
+  body{
+        background-image: url("https://static.vecteezy.com/system/resources/previews/000/432/883/original/vector-a-simple-nature-landscape.jpg");
+        height: 100vh;
+        width: 100vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+    }
+    
+    nav{
+        background-color: #7b7b813d;
+    
+        width: 100%;
+    }
+    
+    .menu{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        justify-content:space-between;
+    }
+    
+    .lista a{
+        text-decoration: none;
+        color: black;
+        font-size: 30px;
+        display: inline-block;
+        padding: 15px;
+    }
+    
+    .menu .lista{
+        display: inline-block;
+    }
+    
+    
+    .lista a:hover{
+        background-color: rgb(255, 253, 122);
+        color: black;
+        font-size: 40px;
+    }
+    
+    img{
+        width: 70px;
+        height: 70px;
+    }
+
+
+    main{
+        text-align: center;
+    }
+    
+    
+.todo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .form {
+    margin-top: 20px;
+    background-color: white;
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+  }
+  
+  .titulo {
+    font-size: 35px;
+    text-align: center;
+    text-shadow: 2px 2px #558ABB;
+    margin-bottom: 50px;
+  }
+
+  .inputContenedor {
+    position: relative;
+    height: 45px;
+    width: 80%;
+    margin-bottom: 17px;
+  }
+
+  .input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #e7f157de;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+  }
+
+  ::placeholder {
+    color: transparent;
+  }
+
+  .label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: white;
+    color: #454553;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+  }
+
+  .submitBtn {
+    display: block;
+    margin-left: auto;
+    padding: 15px 30px;
+    border: none;
+    background-color: rgb(2, 128, 0);
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+  }
+  
+  .submitBtn:hover {
+    background-color: #2bbe18;
+    transform: translateY(-2px);
+  }
+
+  .grado{
+    text-align: center;
+  }
+  
+  #grado{
+   justify-content: center;
+   background-color: #e5f0fa;
+   border: solid 2px black;
+  }
+
+  .input:focus + .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: purple;
+  }
+
+  .input:focus {
+    border: 2px solid purple;
+  }
+
+
+  .input:not(:placeholder-shown)+ .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+ 

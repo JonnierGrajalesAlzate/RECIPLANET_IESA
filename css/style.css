@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700');
+@import url('https://fonts.googleapis.com/css2? family= Indie+Flower & display=swap');
+
+body{
+    background-color: #82cc80;
+}
+
+/* CABECERA */
+#header {
+background-color:#2d2d2d;
+color: #ECE9E6;
+padding:1em;
+box-shadow: 0 0 155px rgba(0,0,0,0.75) inset;
+}
+
+#header h1 {
+text-align: center;
+font: 70px;
+font-weight: 500;
+margin: 1em;
+
+}
+
+
+
+h1 {
+display: block;
+font-size: 3em;
+font-weight: bold;
+}
+
+/* MENU NAVEGACION */
+nav ul {
+  
+  margin:0; /* PAGINA SIN MARGENES */
+  padding:1em;
+  left:0;
+  right:0;
+  list-style-type:none; /* Quitar lista */
+  font-family:"Open Sans";
+}
+
+#menu {
+  display:table;
+
+  overflow:hidden;
+  width:98%;
+  position:relative;
+}
+
+#menu li {
+  display:table-cell;
+} /* COLOCA MENU EN CELDAS */
+
+#menu li a {
+  color:#000;
+  font-family: 'Indie Flower', cursive;
+  font-size: 30px;
+  display:block; /* CAMBIAR ANCHO Y ALTO DEL ELEMENTO a */
+  /*line-heigth:20px;*/
+  padding:20px;
+  position:relative;
+  text-align:center;
+  text-decoration:none;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+#menu a:hover {
+  opacity: 0.7;
+  color: black;
+
+  display: block;
+}
+
+/* COLOCAR ICONOS HACIA EL FONDO PARA LA ANIMACION */
+nav > ul > li > a span {
+  background:#174459;
+  display:block; /* LOS ICONOS LOS QUITAMOS COMO ELEMENTOS EN LINEA */
+  height:100%;
+  width:100%;
+  left:0px;
+  position:absolute;
+  top:-55px;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+/* CENTRAR ICONOS */
+nav > ul > li > a span .fa {
+  display:block;
+  padding:2em;
+  position:center;
+}
+
+/* ICONOS BAJEN AL PASAR EL PUNTERO */
+/* SE ACCEDE AL ELEMENTO a Y CUANDO PASEMOS EL
+PUNTERO SOBRE EL ELEMENTO a LOS CAMBIOS SE VAN A APLICAR AL ELMENTO span */
+nav > ul > li > a:hover > span {
+  top:0;
+}
+/* -------------------------------------- */
+
+/* INICIO SUB-MENU */
+.list:hover {
+  display: block; /* INDICA QUE AL PASAR EL PUNTERO POR EL ELEMENTO li MUESTRE EL ELMENTO ul */
+}
+
+#submenu {
+  display: none;
+  position:absolute;
+  background:#fff; /* PROBLEMA BARRA NEGRA */
+  overflow:hidden; /* LOS ELEMENTOS NO QUEDEN FUERA */
+  left:0;
+  height:0%;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  transition: all 2s ease; 
+}
+
+/* COLORES FONDO ICONOS */
+
+.usuario{
+  opacity: 0.4;
+  border: 3px solid black;
+  border-radius: 50px;
+}
+  
+.usuario:hover{
+  opacity: 1;
+  border: 3px solid black;
+  border-radius: 50px;
+  transform: translateY(-20px);
+  transition: all 0.3s;
+
+}
+
+.color2 {
+    border-radius: 30px;
+  background:#4FC44F;
+}
+.color3 {
+    border-radius: 30px;
+  background:#C35B4B;
+}
+.color4 {
+    border-radius: 30px;
+  background:#110b3f;
+}
+
+
+
+/* FIN SUB-MENU */
+
+/* INICIO BODY */
+.search {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: reciplanet1 1.5s ease;
+}
+
+@keyframes reciplanet1{
+  0% {
+    opacity: 0;
+   
+}
+  
+
+100%{
+    opacity: 1;
+ 
+}
+}
+
+.user-form {
+    width: 100%;
+    max-width: 700px;
+  }
+
+  
+  .user-form input {
+    width: 100%;
+    display: block;
+    background-image: url(../assets/gucci.png);
+    border: solid 2px black;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    font-family: inherit;
+    font-size: 1rem;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.2);
+  }
+  
+  .user-form input::placeholder {
+    color: #fff;
+  }
+  
+  .user-form input:focus {
+    outline: none;
+  }
+  
+  .card {
+    max-width: 800px;
+    background-color: #004b66;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.2);
+    display: flex;
+    padding: 3rem;
+    margin: 0 1.5rem;
+  }
+
+  .avatar {
+  border-radius: 50%;
+  border: 5px solid #00394d;
+  height: 150px;
+  width: 150px;
+}
+
+.user-info {
+  color: #eee;
+  margin-left: 2rem;
+}
+
+.user-info h2 {
+  margin-top: 0;
+}
+
+.user-info ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 0;
+  max-width: 400px;
+}
+
+.user-info ul li {
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+
+.user-info ul li strong {
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+  @media (max-width: 500px) {
+    .card {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .user-form {
+      max-width: 400px;
+    }
+  }
+
+  /*PRIMER CONTENEDOR*/
+
+  .section-container:last-of-type {
+    align-items: center;
+    display: flex;
+    float: left;
+  }
+  
+  .section-container {
+    background: 100% center / cover no-repeat;
+    min-height: 100vh;
+    width: 100%;
+  }
+
+  @keyframes reciplanet{
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+  }
+
+  100%{
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+  .last-container {
+    animation: reciplanet 1.2s ease;
+    backdrop-filter: blur(10px);
+    background-color: #5da5a2;
+    border: 1px;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+    display: flex;
+    width: min(39rem, calc(50% + 70px));
+  }
+
+  .last-container img{
+    width: 150px;
+      height: 150px;
+      display: inline-table;
+      border: solid 5px #2d2d2d;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+  }
+
+  .left {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-right: 2rem;
+    padding: 2rem;
+  }
+  
+  .last-title {
+    font-family: 'Indie Flower', cursive;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.12;
+    margin-bottom: 1rem;
+  }
+  
+  .last-description {
+    font-family: 'Lobster', cursive;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.15;
+  }
+  
+
+
+  .last-big-title {
+    align-items: center;
+    background: var(--white)
+    url('https://images.unsplash.com/photo-1537222961176-50d25fff78ef?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')
+    100% / cover no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: flex;
+    font-size: 6rem;
+    font-weight: 700;
+    height: 100%;
+    line-height: 0.9;
+    padding: 1rem;
+    text-align: center;
+    -webkit-text-stroke: 1px var(--cod-gray);
+    text-transform: uppercase;
+    width: 100%;
+  }
+
+
+  .right{
+    animation: reciplanet2 1.2s ease;
+
+    border: 1px;
+    border-radius: 1rem;
+    float: right;
+    width: min(50rem, calc(70% + 90px));
+
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-left: 3rem;
+    padding: 2rem;
+    background-color: #fafd5a; border-radius: 1rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+  }
+
+  .right img{
+    width: 100%;
+      height: 100%;
+      
+      border: solid 5px #2d2d2d;
+     
+  }
+
+  @keyframes reciplanet2{
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+  }
+
+  100%{
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+  
+.last-description1 {
+  font-family: 'Lobster', cursive;
+  font-size: 34px;
+  
+}
+
+
+
+
+
+  
+  
+
+/* FIN DEL BODY */
+
+/* FOOTER */
+
+footer {
+  font: 26px 'Open Sans';
+  text-align: center;
+  text-shadow:  2px 2px 12px rgb(255, 11, 11), -6px -6px 12px rgb(0, 90, 102);
+  text-align: center;
+}
+
