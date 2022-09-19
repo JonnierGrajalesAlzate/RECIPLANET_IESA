@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
     background-color: steelblue;
-    background-image: url(https://besthqwallpapers.com/Uploads/19-8-2020/139935/thumb2-blue-bubbles-background-blue-creative-background-blue-circles-background-abstraction.jpg);
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20210310/pngtree-cartoon-natural-landscape-background-image_582181.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -35,18 +35,19 @@
 }
 
 #selector{
-   background: rgb(154, 173, 224);
-   color: rgb(0, 0, 0);
+  border: 2px solid black;
+   background: rgb(78, 121, 238);
+   color: rgb(255, 255, 255);
    font-family: 'Lobster', cursive;
    border-radius: 20px;
 }
 
 #selector:hover{
-    font-size: 27px;
-    color: black;
-    background: #fcff5c;
+  border: 2px solid black;
+    color: white;
+    background: rgba(57, 102, 226, 0.582);
     border-radius: 20px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   
 }
   
   #encabezado {
@@ -56,29 +57,32 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: rgb(216, 216, 216);
+    background: rgb(209, 218, 215);
+    border: 2px solid black;
     border-radius: 10px;
     margin: 10px;
     padding: 10px;
   }
 
   .regresar{
+  
     background-color: aqua;
     border-radius: 50px;
   }
   
   .opcion {
     width: 80vw;
-    background: white;
+    background: rgb(209, 218, 215);
     border-radius: 10px;
+    border: 2px solid black;
     margin: 10px;
     padding: 10px;
     cursor: pointer;
   }
   
   .opcion:hover{
-       background: rgb(255, 187, 0);
-       font-size: 18px;
+    background: rgba(127, 228, 203, 0.678);
+      
        font-weight: 30px;
        transition: all 0.3s ease;
   }

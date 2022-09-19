@@ -6,7 +6,8 @@ function LaTeX(code) {
     return `<img src="${LaTeX(code)}" style="height:40px">`;
   }
   
-  let baseDePreguntas = [
+  let baseDePreguntas =
+   [
     {
       pregunta: "¿En cual contendor va una hamburguesa?",
       ayuda: "Es un residuo organico",
@@ -41,6 +42,39 @@ function LaTeX(code) {
       distractores: ["Negro", "Verde", "Rojo"],
     },
 
+    {
+      pregunta: "¿Que se hace con la caja de pizza?",
+      respuesta: "Se arroja en el contenedor negro",
+      imagen: "https://st4.depositphotos.com/16122460/19903/i/600/depositphotos_199035400-stock-photo-open-cardboard-pizza-box-on.jpg",
+      distractores: ["Se arroja en el contenedor rojo", "Se arroja en el contenedor verde", "Se arroja en el contenedor blanco"],
+    },
+
+    {
+      pregunta: "¿Que debemos de hacer con un tomate podrido?",
+      respuesta: "Tirarlo al contenedor verde",
+      imagen: "https://preview.free3d.com/img/2011/10/1744433180523365960/jaqxka3g-900.jpg",
+      distractores: ["Tirarlo al contenedor blanco", "Tirarlo al contenedor negro", "Guardarlo"],
+    },
+
+    {
+      pregunta: "¿En cual conetendor se arroja las servilletas usadas?",
+      respuesta: "Negro",
+      imagen: "https://st2.depositphotos.com/3480741/10149/i/600/depositphotos_101498982-stock-photo-hand-in-rubber-glove-holds.jpg",
+      distractores: ["Blanco", "Verde", "Rojo"],
+    },
+
+    {
+      pregunta: "¿Los vidrios en cual contendor va?",
+      respuesta: "Blanco",
+      imagen: "https://docomopdotcom.files.wordpress.com/2014/09/dp_00_vidrio.jpg",
+      distractores: ["Rojo", "Verde", "Negro"],
+    },
+
+    {
+      pregunta: "¿Que debemos hacer si alguien arroja basuras el día que no corresponde?",
+      respuesta: "Reportarlo",
+      imagen: "https://www.municomas.gob.pe/resources/upload/slider/M7EG6GP7basura.jpg",
+      distractores: ["Felicitarlo", "Hacer lo mismo", "No hacer nada"],
+    },
 
   ];
-  
