@@ -2,7 +2,10 @@
 @import url('https://fonts.googleapis.com/css2? family= Indie+Flower & display=swap');
 
 body{
-    background-color: #82cc80;
+  background: url(../assets/fondop.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* CABECERA */
@@ -42,6 +45,7 @@ nav ul {
 
 #menu {
   display:table;
+  
 
   overflow:hidden;
   width:98%;
@@ -191,7 +195,7 @@ nav > ul > li > a:hover > span {
   .user-form input {
     width: 100%;
     display: block;
-    background-image: url(../assets/gucci.png);
+    background-image: url(../assets/sss.png);
     border: solid 2px black;
     border: none;
     border-radius: 10px;
@@ -296,7 +300,7 @@ nav > ul > li > a:hover > span {
   .last-container {
     animation: reciplanet 1.2s ease;
     backdrop-filter: blur(10px);
-    background-color: #5da5a2;
+    background-color: #5da5a199;
     border: 1px;
     border-radius: 1rem;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
@@ -373,7 +377,7 @@ nav > ul > li > a:hover > span {
     flex-direction: column;
     margin-left: 3rem;
     padding: 2rem;
-    background-color: #fafd5a; border-radius: 1rem;
+    background-color: #fafd5aa3; border-radius: 1rem;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
   }
 
