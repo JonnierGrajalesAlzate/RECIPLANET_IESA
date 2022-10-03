@@ -149,15 +149,24 @@ nav > ul > li > a:hover > span {
 
 .color2 {
     border-radius: 30px;
-  background:#4FC44F;
+  background-image: url(../assets/verde1.png);
+  width: 280px;
+  height: 70px;
+  color: white;
 }
 .color3 {
     border-radius: 30px;
-  background:#C35B4B;
+    background-image: url(../assets/blanco1.png);
+    width: 280px;
+    height: 70px;
+    
 }
 .color4 {
     border-radius: 30px;
-  background:#110b3f;
+    background-image: url(../assets/negro1.png);
+    color: white;
+    width: 280px;
+    height: 70px;
 }
 
 
