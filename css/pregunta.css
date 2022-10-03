@@ -7,7 +7,6 @@
     margin: 0;
     padding: 0;
     background-color: steelblue;
-
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -18,7 +17,7 @@
     font-size: 120%;
   }
 
-  .menu-horizontal{
+  .volver{
     border-radius: 20px;
     height: 60px;
     width: 80%;
@@ -26,7 +25,7 @@
  
 }
 
-.menu-horizontal > li a{
+.volver > li a{
     padding: 15px 20px;
     font-size: 20px;
     color: rgb(0, 0, 0);

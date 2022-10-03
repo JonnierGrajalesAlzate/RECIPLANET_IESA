@@ -51,7 +51,7 @@ async function seleccionarOpción(index) {
   INDEX_PREGUNTA++;
   if (INDEX_PREGUNTA >= baseDePreguntas.length) {
     await Swal.fire({
-      title: "Owen es joto",
+      title: "I.E.S.E",
       text: `Tu puntaje fue de: ${puntaje}/${baseDePreguntas.length}`,
     });
     INDEX_PREGUNTA = 0;

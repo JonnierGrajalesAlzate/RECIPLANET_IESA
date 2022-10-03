@@ -77,4 +77,31 @@ function LaTeX(code) {
       distractores: ["Felicitarlo", "Hacer lo mismo", "No hacer nada"],
     },
 
+
+
+
+    {
+      pregunta: "¿En cual contendor va el papel de cuaderno?",
+      respuesta: "Blanco",
+      imagen: "https://www.cuadernosagendaslibretaspersonalizadas.com/wp-content/uploads/2016/10/hoja-papel.jpg",
+      distractores: ["Negro", "Amarillo", "Verde"],
+    },
+    {
+      pregunta: "¿Que debo hacer para informarme sobre el reciclaje?",
+      respuesta: "Ver videos en Yt y visitar paginas seguras sobre este tema",
+      imagen: "https://i.ytimg.com/vi/-UFFFUTMlCw/maxresdefault.jpg",
+      distractores: ["Preguntarle a mis amigos", "Ver videos en tiktok", "No hacer nada"],
+    },
+    {
+      pregunta: "¿En cual contendor van los residuos organicos?",
+      respuesta: "Verde",
+      imagen: "https://www.elnuevosiglo.com.co/sites/default/files/styles/noticia_interna/public/2020-02/08bsfoto%20febrero%2022.jpg",
+      distractores: ["Blanco", "Rojo", "Azul"],
+    },
+    {
+      pregunta: "¿Que debo hacer si necesito orientación personal sobre este tema?",
+      respuesta: "Preguntarle a mis padre y/o a mis profesores",
+      imagen: "https://us.123rf.com/450wm/colorfuelstudio/colorfuelstudio2001/colorfuelstudio200100532/138525913-ilustraci%C3%B3n-de-vector-de-escuela-de-idea-de-ni%C3%B1o-lindo-feliz.jpg?ver=6",
+      distractores: ["Ignorar el tema", "Pensar que es algo absurdo y enfocarm en algo más", "Ninguna de las anteriores"],
+    },
   ];
