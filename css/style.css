@@ -128,17 +128,36 @@ nav > ul > li > a:hover > span {
   transform: translateY(-20px);
   transition: all 0.3s;
 }
+
+
 .color2 {
+  height: 70px;
+
+  width: 250px;
+
     border-radius: 30px;
-  background:#4FC44F;
+  background-image: url(../assets/verde1.png);
+  color: white;
+  background-position: center;
+  background-size: cover;
+
 }
 .color3 {
+  height: 70px;
+  width: 250px;
     border-radius: 30px;
-  background:#C35B4B;
+    background-image: url(../assets/blanco1.png);
+  background-position: center;
+  background-size: cover;
 }
 .color4 {
+  height: 70px;
+  width: 250px;
     border-radius: 30px;
-  background:#110b3f;
+    background-image: url(../assets/negro1.png);
+   color:white;
+  background-position: center;
+  background-size: cover;
 }
 /* FIN SUB-MENU */
 /* INICIO BODY */
