@@ -40,40 +40,58 @@ let baseDePreguntas =
     imagen: "https://static.abc.es/media/sociedad/2018/07/09/botellas-plastico-k8xG--1248x698@abc.jpg",
     distractores: ["Negro", "Verde", "Rojo"],
   },
-
   {
     pregunta: "¿Que se hace con la caja de pizza?",
     respuesta: "Se arroja en el contenedor negro",
     imagen: "https://st4.depositphotos.com/16122460/19903/i/600/depositphotos_199035400-stock-photo-open-cardboard-pizza-box-on.jpg",
     distractores: ["Se arroja en el contenedor rojo", "Se arroja en el contenedor verde", "Se arroja en el contenedor blanco"],
   },
-
   {
     pregunta: "¿Que debemos de hacer con un tomate podrido?",
     respuesta: "Tirarlo al contenedor verde",
     imagen: "https://preview.free3d.com/img/2011/10/1744433180523365960/jaqxka3g-900.jpg",
     distractores: ["Tirarlo al contenedor blanco", "Tirarlo al contenedor negro", "Guardarlo"],
   },
-
   {
     pregunta: "¿En cual conetendor se arroja las servilletas usadas?",
     respuesta: "Negro",
     imagen: "https://st2.depositphotos.com/3480741/10149/i/600/depositphotos_101498982-stock-photo-hand-in-rubber-glove-holds.jpg",
     distractores: ["Blanco", "Verde", "Rojo"],
   },
-
   {
     pregunta: "¿Los vidrios en cual contendor va?",
     respuesta: "Blanco",
     imagen: "https://docomopdotcom.files.wordpress.com/2014/09/dp_00_vidrio.jpg",
     distractores: ["Rojo", "Verde", "Negro"],
   },
-
   {
     pregunta: "¿Que debemos hacer si alguien arroja basuras el día que no corresponde?",
     respuesta: "Reportarlo",
     imagen: "https://www.municomas.gob.pe/resources/upload/slider/M7EG6GP7basura.jpg",
     distractores: ["Felicitarlo", "Hacer lo mismo", "No hacer nada"],
   },
-
+  {
+    pregunta: "¿En cuál contenedor va el papel de cuaderno?",
+    respuesta: "Blanco",
+    imagen: "https://www.cuadernosagendaslibretaspersonalizadas.com/wp-content/uploads/2016/10/hoja-papel.jpg",
+    distractores: ["Negro", "Amarillo", "Verde"],
+  },
+  {
+    pregunta: "¿Que debo hacer para informarme sobre el reciclaje?",
+    respuesta: "Ver videos en Yt y visitar paginas seguras sobre este tema",
+    imagen: "https://i.ytimg.com/vi/-UFFFUTMlCw/maxresdefault.jpg",
+    distractores: ["Preguntarle a mis amigos", "Ver videos en tiktok", "No hacer nada"],
+  },
+  {
+    pregunta: "¿En cual contendor van los residuos organicos?",
+    respuesta: "Verde",
+    imagen: "https://www.elnuevosiglo.com.co/sites/default/files/styles/noticia_interna/public/2020-02/08bsfoto%20febrero%2022.jpg",
+    distractores: ["Blanco", "Rojo", "Azul"],
+  },
+  {
+    pregunta: "¿Que debo hacer si necesito orientación personal sobre este tema?",
+    respuesta: "Preguntarle a mis padre y/o a mis profesores",
+    imagen: "https://us.123rf.com/450wm/colorfuelstudio/colorfuelstudio2001/colorfuelstudio200100532/138525913-ilustraci%C3%B3n-de-vector-de-escuela-de-idea-de-ni%C3%B1o-lindo-feliz.jpg?ver=6",
+    distractores: ["Ignorar el tema", "Pensar que es algo absurdo y enfocarm en algo más", "Ninguna de las anteriores"],
+  },
 ];

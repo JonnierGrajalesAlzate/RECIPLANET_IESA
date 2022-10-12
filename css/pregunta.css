@@ -1,22 +1,31 @@
+@import url('https://fonts.googleapis.com/css2? family= Indie+Flower & display=swap');
+
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
   }
   
   body {
     margin: 0;
     padding: 0;
-    background-color: steelblue;
-    background-image: url(https://img.freepik.com/vector-premium/dibujos-animados-rio-medio-hermoso-paisaje-natural_43633-5055.jpg?w=2000);
+    background: linear-gradient(150deg, rgb(80, 196, 80), white, rgb(241, 241, 64) );
+   background-size: 400% 300%;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+   animation: Reciplanet 5s ease infinite;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     font-size: 120%;
   }
+
+  @keyframes Reciplanet {
+    0%{background-position: 0% 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0% 50%;}
+  }
+
   .menu-horizontal{
     border-radius: 20px;
     height: 60px;
@@ -32,18 +41,30 @@
     float: left;
 }
 
+#ayuda{
+  background-color: green;
+  color: white;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+#ayuda:hover{
+  background-color: rgb(27, 177, 27);
+  color: black;
+}
+
 #selector{
   border: 2px solid black;
-   background: rgb(78, 121, 238);
-   color: rgb(255, 255, 255);
+  background: black;
+  color: white;
    font-family: 'Lobster', cursive;
    border-radius: 20px;
 }
 
 #selector:hover{
   border: 2px solid black;
-    color: white;
-    background: rgba(57, 102, 226, 0.582);
+  background: rgba(19, 18, 18, 0.74);
+  color: white;
     border-radius: 20px;
 
 }
@@ -55,31 +76,27 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: rgb(209, 218, 215);
+    background: rgb(199, 199, 199);
     border: 2px solid black;
     border-radius: 10px;
     margin: 10px;
     padding: 10px;
-  }
-
-  .regresar{
-
-    background-color: aqua;
-    border-radius: 50px;
+    font-family: 'Indie Flower', cursive;
   }
 
   .opcion {
     width: 80vw;
-    background: rgb(209, 218, 215);
+    background: rgb(199, 199, 199);
     border-radius: 10px;
     border: 2px solid black;
     margin: 10px;
     padding: 10px;
     cursor: pointer;
+    font-family: 'Indie Flower', cursive;
   }
 
   .opcion:hover{
-    background: rgba(127, 228, 203, 0.678);
+    background: rgba(223, 142, 76, 0.849);
 
        font-weight: 30px;
        transition: all 0.3s ease;
