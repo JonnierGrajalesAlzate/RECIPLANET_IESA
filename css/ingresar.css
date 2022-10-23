@@ -14,11 +14,13 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     overflow-x: hidden;
-    overflow-y: hidden;
 }
 
-header{
-    background-color: rgb(0, 0, 0);
+
+nav{
+  background-color: #7b7b813d;
+
+  width: 100%;
 }
 
 .menu{
@@ -32,7 +34,7 @@ header{
 
 .lista a{
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 30px;
     display: inline-block;
     padding: 15px;
@@ -52,9 +54,11 @@ header{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    
   }
 
   .form {
+    border: 1px solid black;
     background-color: white;
     width: 400px;
     border-radius: 8px;
@@ -66,13 +70,26 @@ header{
     font-size: 35px;
     text-align: center;
     text-shadow: 2px 2px #558ABB;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
   }
+
+  .imagen{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+   
+}
+
+img{
+  width: 180px;
+  height: 180px;
+  margin-bottom: 30px;
+}
 
   .inputContenedor{
     position: relative;
     height: 45px;
-    width: 80%;
+    width: 100%;
     margin-bottom: 17px;
   }
 
@@ -105,6 +122,21 @@ header{
     font-size: 16px;
     transition: 0.5s;
     z-index: 0;
+  }
+
+  
+  .check{
+    margin-top: 5px;
+    display: flex;
+    
+  }
+
+  .verificacion{
+    margin-left: 5px;
+  }
+
+  .lbel{
+    font-family: monospace;
   }
 
   .boton {
