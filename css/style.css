@@ -39,12 +39,21 @@ nav ul {
 
 #menu {
   display:table;
-
-
+  animation: reciplanet5 5s ease;
   overflow:hidden;
   width:98%;
   position:relative;
 }
+
+@keyframes reciplanet5 {
+  0%{
+    transform: translateX(-100);
+  }
+  100%{
+    transform: tras;
+  }
+}
+
 #menu li {
   display:table-cell;
 } /* COLOCA MENU EN CELDAS */

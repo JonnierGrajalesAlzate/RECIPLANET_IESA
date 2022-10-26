@@ -9,10 +9,12 @@
   body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(150deg, rgb(80, 196, 80), white, rgb(241, 241, 64) );
+    background-image: url();
    background-size: 400% 300%;
     background-repeat: no-repeat;
-   animation: Reciplanet 5s ease infinite;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/003/581/045/non_2x/cartoon-scene-nature-with-sky-background-flat-nature-landscape-with-meadow-illustration-vector.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,14 +38,19 @@
 .menu-horizontal > li a{
     padding: 15px 20px;
     font-size: 20px;
+    font-family: 'Poppins', sans-serif;
     color: rgb(0, 0, 0);
     text-decoration: none;
     float: left;
 }
 
 #ayuda{
-  background-color: green;
-  color: white;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(150deg, rgb(80, 196, 80), white, rgb(241, 241, 64) );
+   background-size: 400% 300%;
+    background-repeat: no-repeat;
+   animation: Reciplanet 5s ease infinite;
+  color: black;
   border: 2px solid black;
   cursor: pointer;
 }
@@ -57,7 +64,7 @@
   border: 2px solid black;
   background: black;
   color: white;
-   font-family: 'Lobster', cursive;
+  font-family: 'Poppins', sans-serif;
    border-radius: 20px;
 }
 
@@ -70,34 +77,36 @@
 }
 
   #encabezado {
+    font-family: 'Poppins', sans-serif;
     width: 80vw;
     min-height: 180px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: rgb(199, 199, 199);
+    background-color: rgb(190, 185, 185);
     border: 2px solid black;
     border-radius: 10px;
     margin: 10px;
     padding: 10px;
-    font-family: 'Indie Flower', cursive;
   }
 
   .opcion {
     width: 80vw;
-    background: rgb(199, 199, 199);
+    background-color: rgb(190, 199, 191);
     border-radius: 10px;
     border: 2px solid black;
     margin: 10px;
     padding: 10px;
     cursor: pointer;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Poppins', sans-serif;
   }
 
   .opcion:hover{
-    background: rgba(223, 142, 76, 0.849);
+    background: rgb(245, 142, 82);
 
        font-weight: 30px;
        transition: all 0.3s ease;
   }
+
+  
