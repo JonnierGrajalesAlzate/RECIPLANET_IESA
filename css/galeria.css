@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2? family= Indie+Flower & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
 
-*{
+* {
     transition: all 0.3s;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 body{
     box-sizing: border-box;
     margin: 0;
-    background-color: rgb(123, 204, 123);
+   background-color: white;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,11 +17,11 @@ body{
 
 
 .menu-horizontal{
-    background-color:  rgb(14, 24, 51);
-    height: 100px;
-    width: 100%;
-    list-style: none;
- 
+  background-color: rgb(5, 140, 0);
+  height: 100px;
+  width: 100%;
+  list-style: none;
+
 }
 
 .menu-horizontal > li a{
@@ -34,22 +34,23 @@ body{
 }
 
 #selector{
-   background: rgb(14, 24, 51);
    color: white;
-   font-family: 'Lobster', cursive;
+   font-family: 'Poppins', sans-serif;
 }
 
 #selector:hover{
-    font-size: 57px;
-    color: black;
-    background: #fcff5c;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding: 20px 20px;
+  background-size: cover;
+  font-size: 40px;
+  color: black;
+  background: gold;
+  font-family: 'Poppins', sans-serif;
 }
 
 
 /*cards*/
 
-.contenedor {
+.contenedor {background-color:rgb(251, 251, 199);
     max-width: 800px;
     box-shadow: 20px 30px 20px #fbff00, 20px 30px 20px #14640a;
     margin: 5% auto;
@@ -110,7 +111,7 @@ body{
 
   .reci h2{
     font-size: 30px;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     text-decoration: double;
 }
@@ -118,6 +119,8 @@ body{
 
 .reci h4{
   transition: flex 0.3 ease-in 0.4s;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
   font-size: 20px;
 }
 

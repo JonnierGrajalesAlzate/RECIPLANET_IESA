@@ -3,6 +3,7 @@ let email, contrasena;
 let formulario =  document.getElementById('form');
 
 formulario.addEventListener('submit', (e)=>{
+    e.preventDefault();
     LeerDatos()
 })
 
@@ -25,11 +26,12 @@ function ListarDatos(email, contrasena){
     let contrasenaUsu = localStorage.getItem('Contraseña')
 
     if(emailUsu== email && contrasenaUsu == contrasena){
-    swal({
-        title: "Reciplanet",
-        Text: "Bienvenido",
-        icon: "success",
-      });
+        swal({
+            title: "Reciplanet!",
+            text: "Bienvenido!",
+            icon: "success",
+            button: "continuar",
+          });
      window.location.href('index.html');
     }else{
           swal("Error", "Espacios en blanco", "error" );

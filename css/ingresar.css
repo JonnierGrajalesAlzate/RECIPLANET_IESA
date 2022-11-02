@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
 
 *{
     transition: all 0.3s;
@@ -18,7 +18,7 @@ body{
 
 
 nav{
-  background-color: #7b7b813d;
+  background-color: rgb(5, 140, 0);
 
   width: 100%;
 }
@@ -33,18 +33,24 @@ nav{
 }
 
 .lista a{
-    text-decoration: none;
-    color: black;
-    font-size: 30px;
-    display: inline-block;
-    padding: 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  display: inline-block;
+  padding: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.menu .lista{
+  display: inline-block;
 }
 
 
 .lista a:hover{
-    background-color: rgb(255, 253, 122);
-    color: black;
-    font-size: 40px;
+  font-family: 'Poppins', sans-serif;
+  background-color: gold;
+  color: black;
+  font-size: 40px;
 }
 
 
@@ -67,6 +73,7 @@ nav{
   }
   
   .titulo {
+    font-family: 'Poppins', sans-serif;
     font-size: 35px;
     text-align: center;
     text-shadow: 2px 2px #558ABB;
@@ -110,9 +117,11 @@ img{
 
   ::placeholder {
     color: transparent;
+    font-family: 'Poppins', sans-serif;
   }
 
   .label {
+    font-family: 'Poppins', sans-serif;
     position: absolute;
     top: 15px;
     left: 15px;
@@ -136,7 +145,7 @@ img{
   }
 
   .lbel{
-    font-family: monospace;
+    font-family: 'Poppins', sans-serif;
   }
 
   .boton {

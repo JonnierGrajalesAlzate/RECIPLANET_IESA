@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2? family= Indie+Flower & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
 
 * {
   padding: 0;
@@ -38,6 +38,7 @@
 .menu-horizontal > li a{
     padding: 15px 20px;
     font-size: 20px;
+    font-weight: 20px;
     font-family: 'Poppins', sans-serif;
     color: rgb(0, 0, 0);
     text-decoration: none;
@@ -46,6 +47,7 @@
 
 #ayuda{
   font-family: 'Poppins', sans-serif;
+  font-weight: 20px;
   background: linear-gradient(150deg, rgb(80, 196, 80), white, rgb(241, 241, 64) );
    background-size: 400% 300%;
     background-repeat: no-repeat;
@@ -62,8 +64,9 @@
 
 #selector{
   border: 2px solid black;
-  background: black;
+  background-color: green;
   color: white;
+  font-weight: 20px;
   font-family: 'Poppins', sans-serif;
    border-radius: 20px;
 }
@@ -71,12 +74,14 @@
 #selector:hover{
   border: 2px solid black;
   background: rgba(19, 18, 18, 0.74);
-  color: white;
+  background-color: rgb(163, 231, 123);
+  color: black;
     border-radius: 20px;
 
 }
 
   #encabezado {
+    font-weight: 20px;
     font-family: 'Poppins', sans-serif;
     width: 80vw;
     min-height: 180px;
@@ -84,7 +89,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(190, 185, 185);
+    background-color: rgba(206, 206, 206, 0.884);
     border: 2px solid black;
     border-radius: 10px;
     margin: 10px;
@@ -93,17 +98,18 @@
 
   .opcion {
     width: 80vw;
-    background-color: rgb(190, 199, 191);
+    background-color: rgba(206, 206, 206, 0.884);
     border-radius: 10px;
     border: 2px solid black;
     margin: 10px;
     padding: 10px;
     cursor: pointer;
+    font-weight: 20px;
     font-family: 'Poppins', sans-serif;
   }
 
   .opcion:hover{
-    background: rgb(245, 142, 82);
+    background: rgb(153, 202, 160);
 
        font-weight: 30px;
        transition: all 0.3s ease;

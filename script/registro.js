@@ -3,6 +3,7 @@ let nombre, email, numero, contrasena, Rcontrasena;
 let formulario =  document.getElementById('form');
 
 formulario.addEventListener('submit', (e)=>{
+    e.preventDefault();
         LeerDatos()
 })
 

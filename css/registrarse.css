@@ -1,51 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
 *{
-  transition: all 0.3s;
-  box-sizing: border-box;
-  margin: 0;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    margin: 0;
 }
 
 body{
-      background-image: url("https://static.vecteezy.com/system/resources/previews/000/432/883/original/vector-a-simple-nature-landscape.jpg");
-      height: 100vh;
-      width: 100vw;
-      background-size: cover;
-      background-repeat: no-repeat;
-      overflow-x: hidden;
-  }
-  
-  nav{
-      background-color: #7b7b813d;
-  
-      width: 100%;
-  }
-  
-  .menu{
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      display: flex;
-      justify-content:space-between;
-  }
-  
-  .lista a{
-      text-decoration: none;
-      color: black;
-      font-size: 30px;
-      display: inline-block;
-      padding: 15px;
-  }
-  
-  .menu .lista{
-      display: inline-block;
-  }
-  
-  
-  .lista a:hover{
-      background-color: rgb(255, 253, 122);
-      color: black;
-      font-size: 40px;
-  }
+    background: url('https://static.vecteezy.com/system/resources/previews/000/432/883/original/vector-a-simple-nature-landscape.jpg');
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+
+nav{
+  background-color: rgb(5, 140, 0);
+
+  width: 100%;
+}
+
+.menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    display: flex;
+    justify-content:space-between;
+}
+
+.lista a{
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  display: inline-block;
+  padding: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.menu .lista{
+  display: inline-block;
+}
+
+
+.lista a:hover{
+  font-family: 'Poppins', sans-serif;
+  background-color: gold;
+  color: black;
+  font-size: 40px;
+}
   
 
 
@@ -59,7 +65,7 @@ body{
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 5%;
+  margin: 0;
 }
 
 .form {

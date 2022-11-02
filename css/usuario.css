@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -14,12 +16,12 @@ body{
 }
  
 .container{
-    width: 20em;
+    width: 50vw;
     background-color: rgb(255, 255, 255);
     overflow: hidden;
     border-radius: 1em;
     text-align: center;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1em;
 }
  
@@ -42,16 +44,19 @@ body{
 }
  
 .name{
+    font-family: 'Poppins', sans-serif;
     font-size: 1.5em;
     text-transform: uppercase;
 }
  
 .username{
+    font-family: 'Poppins', sans-serif;
     font-size: 1em;
     color: #9e9e9e;
 }
  
 .links{
+    font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
     margin: 1.5em 0;
@@ -69,25 +74,6 @@ a:last-child{
     margin: 0;
 }
  
-.insta:hover{
-    color:rgb(255, 70, 101);
-    transform: scale(2,2);
-}
- 
-.git:hover{
-    color:rgb(0, 0, 0);
-    transform: scale(2,2);
-}
- 
-.linkedin:hover{
-    color:rgba(4, 0, 253, 0.842);
-    transform: scale(2,2);
-}
- 
-.facebook:hover{
-    color:rgb(4, 0, 255);
-    transform: scale(2,2);
-}
  
 .puntaje{
     margin-bottom: 1.8em;
