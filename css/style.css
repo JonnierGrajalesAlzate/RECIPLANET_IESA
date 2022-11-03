@@ -39,6 +39,14 @@ nav ul {
 }
 
 #menu {
+  justify-content: space-around;
+  background: repeating-linear-gradient(
+      45deg,
+      rgb(255, 243, 173),
+      rgb(185, 255, 185),
+      rgb(255, 243, 173) 40px,
+      rgb(185, 255, 185) 60px
+    );
   display:table;
   animation: reciplanet5 5s ease;
   overflow:hidden;
@@ -51,7 +59,7 @@ nav ul {
     transform: translateX(-100);
   }
   100%{
-    transform: tras;
+    transform: translateX(0);
   }
 }
 
@@ -136,7 +144,7 @@ nav > ul > li > a:hover > span {
   opacity: 1;
   border: 3px solid black;
   border-radius: 50px;
-  transform: translateY(-20px);
+  transform: translateY(-10px);
   transition: all 0.3s;
 }
 
@@ -151,6 +159,7 @@ nav > ul > li > a:hover > span {
   color: white;
   background-position: center;
   background-size: cover;
+
 
 }
 .color3 {
@@ -419,6 +428,8 @@ footer{
 
 .footer h6
 {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
   color:#fff;
   font-size:16px;
   margin-top:5px;
@@ -444,6 +455,7 @@ footer{
 
 p{
   color: rgb(190, 189, 189);
+  font-family: 'Poppins', sans-serif;
 }
 
 .cont3{
@@ -463,6 +475,7 @@ p{
 {
   display:block;
   color: rgb(190, 189, 189);
+  font-family: 'Poppins', sans-serif;
 
 }
 
@@ -484,6 +497,7 @@ p{
 }
 .hecho
 {
+  font-family: 'Poppins', sans-serif;
   margin:0
 }
 @media (max-width:991px)
@@ -507,6 +521,7 @@ p{
 
 .cont2 h6{
   text-align: center;
+  
 }
 
 .redes

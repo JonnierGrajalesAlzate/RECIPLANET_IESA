@@ -9,7 +9,7 @@ function opnLaTeX(code) {
 let baseDePreguntas =
  [
   {
-    pregunta: "¿En cual contendor va una hamburguesa?",
+    pregunta: "¿En cual contenedor va una hamburguesa?",
     ayuda: "Es un residuo organico",
     imagen: "https://storage.contextoganadero.com/s3fs-public/cronica_de_la_semana/field_image/2022-03/cronica-origen-hamburguesas.jpg",
     respuesta: "Verde",

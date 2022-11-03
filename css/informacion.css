@@ -88,11 +88,11 @@ h1{
     text-align: center;
     display: inline-block;
     align-content: right;
-    animation: jonnier 1s ease;
+    animation: reci2 1s ease;
     
 }
 
-@keyframes jonnier{
+@keyframes reci2{
     0% {
       opacity: 0;
       transform: translateX(-100%);
@@ -104,7 +104,7 @@ h1{
   }
   }
 
-  @keyframes jonnier2{
+  @keyframes reci3{
     0% {
       opacity: 0;
       transform: translateX(100%);
@@ -136,6 +136,12 @@ h1{
     font-family: 'Poppins', sans-serif;
     margin-top: 20px;
     font-size: 20px;
+    color: black;
+}
+
+.imge{
+    height: 150px;
+    width: 150px;
 }
 
 img{
@@ -148,6 +154,12 @@ img{
     justify-content: space-between;
 }
 
+.imge :hover{
+    width: 200px ;
+    height: 200px;
+}
+
+
 .inf{
     
     width: 30%;
@@ -157,7 +169,7 @@ img{
     align-content: left;
     float: right;
     margin-top: 20px;
-    animation: jonnier2 1s ease;
+    animation: reci3 1s ease;
 }
 
 .inf h2{
@@ -167,6 +179,7 @@ img{
 }
 
 .inf p{
+    color: black;
     text-align: center;
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
@@ -178,4 +191,217 @@ img{
     display: flex;
     justify-content: center;
 }
+
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .footer
+  {
+    margin-top: 20px;
+    min-height: 300px;
+    width: 100%;
+    background-color:#26272b;
+    padding:45px 0 20px;
+    font-size:20px;
+    line-height:24px;
+    color:#737373;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+  .footer h6
+  {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color:#fff;
+    font-size:16px;
+    margin-top:5px;
+  
+  }
+  
+  .reci{
+    min-height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .text{
+    margin: 0;
+  
+  }
+  
+  .cont1{
+    margin-top: 30px;
+  
+  }
+  
+  p{
+    color: rgb(190, 189, 189);
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .cont3{
+    text-align: center;
+    background-color:#26272b;
+    color: white;
+  
+  }
+  
+  
+  .email
+  {
+    padding-left:0;
+    list-style:none;
+  }
+  .email li
+  {
+    display:block;
+    color: rgb(190, 189, 189);
+    font-family: 'Poppins', sans-serif;
+  
+  }
+  
+  .email.inline li
+  {
+    display:inline-block;
+  }
+  
+  
+  .site-footer .redes a
+  {
+    width:40px;
+    height:40px;
+    line-height:40px;
+    margin-left:6px;
+    margin-right:0;
+    border-radius:100%;
+    background-color:#33353d;
+  }
+  .hecho
+  {
+    font-family: 'Poppins', sans-serif;
+    margin:0
+  }
+  @media (max-width:991px)
+  {
+    .footer [class^=col-]
+    {
+      margin-bottom:30px
+    }
+  }
+  @media (max-width:767px)
+  {
+    .footer
+    {
+      padding-bottom:0
+    }
+    .footer .hecho,.footer .redes
+    {
+      text-align:center
+    }
+  }
+  
+  .cont2 h6{
+    text-align: center;
+    
+  }
+  
+  .redes
+  {
+  
+    padding-left:0;
+    margin-bottom:0;
+    list-style:none
+  }
+  .redes li
+  {
+    display:inline-block;
+    margin-bottom:4px
+  }
+  .redes li.title
+  {
+    margin-right:15px;
+    text-transform:uppercase;
+    color:#96a2b2;
+    font-weight:700;
+    font-size:13px
+  }
+  .redes a{
+    background-color:#eceeef;
+    color:#818a91;
+    font-size:16px;
+    display:inline-block;
+    line-height:44px;
+    width:44px;
+    height:44px;
+    text-align:center;
+    margin-right:8px;
+    border-radius:100%;
+    -webkit-transition:all .2s linear;
+    -o-transition:all .2s linear;
+    transition:all .2s linear
+  }
+  .redes a:active,.redes a:focus,.redes a:hover
+  {
+    color:#fff;
+    background-color:#29aafe
+  }
+  .redes.size-sm a
+  {
+    line-height:34px;
+    height:34px;
+    width:34px;
+    font-size:14px
+  }
+  
+   .facebook{
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+    background-image: url('https://us.123rf.com/450wm/alsstocks450/alsstocks4501911/alsstocks450191100111/136346945-voronezh-rusia-21-de-noviembre-de-2019-icono-redondo-del-logotipo-de-facebook-en-color-azul.jpg?ver=6') ;
+  }
+  .instagram{
+    background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png') ;
+  }
+  .twitter{
+    background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+    background-image: url('http://store-images.s-microsoft.com/image/apps.26737.9007199266244427.c75d2ced-a383-40dc-babd-1ad2ceb13c86.ed1d047e-03d9-4cd8-a342-c4ade1e58951') ;
+  }
+  
+  .redes a.facebook:hover
+  {
+    opacity: 0.5;
+  }
+  .redes a.instagram:hover
+  {
+    opacity: 0.5;
+  }
+  
+  .redes a.twitter:hover
+  {
+    opacity: 0.5;
+  }
+  @media (max-width:767px)
+  {
+    .redes li.title
+    {
+      display:block;
+      margin-right:0;
+      font-weight:600
+    }
+  }
+  
+  
 
