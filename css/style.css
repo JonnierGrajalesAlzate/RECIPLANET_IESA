@@ -299,6 +299,7 @@ nav > ul > li > a:hover > span {
   }
 }
   .last-container {
+    margin-left: 20px;
     animation: reciplanet 1.2s ease;
     backdrop-filter: blur(10px);
     background-color: #5da5a199;
@@ -362,6 +363,7 @@ nav > ul > li > a:hover > span {
     width: 100%;
   }
   .right{
+    margin-right: 20px;
     animation: reciplanet2 1.2s ease;
     border: 1px;
     border-radius: 1rem;
