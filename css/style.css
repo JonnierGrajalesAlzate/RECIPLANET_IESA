@@ -1,11 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+}
 
 body{
   background-color: white;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-x: hidden;
 }
 
 /* CABECERA */
@@ -40,13 +43,6 @@ nav ul {
 
 #menu {
   justify-content: space-around;
-  background: repeating-linear-gradient(
-      45deg,
-      rgb(255, 243, 173),
-      rgb(185, 255, 185),
-      rgb(255, 243, 173) 40px,
-      rgb(185, 255, 185) 60px
-    );
   display:table;
   animation: reciplanet5 5s ease;
   overflow:hidden;
@@ -66,6 +62,7 @@ nav ul {
 #menu li {
   display:table-cell;
 } /* COLOCA MENU EN CELDAS */
+
 #menu li a {
   color:#000;
   font-family: 'Poppins', sans-serif;
@@ -181,24 +178,6 @@ nav > ul > li > a:hover > span {
 }
 /* FIN SUB-MENU */
 /* INICIO BODY */
-.search {
-    display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  animation: reciplanet1 1.5s ease;
-}
-@keyframes reciplanet1{
-  0% {
-    opacity: 0;
-   
-}
-  
-100%{
-    opacity: 1;
- 
-}
-}
 .user-form {
     width: 100%;
     max-width: 700px;
@@ -278,9 +257,10 @@ nav > ul > li > a:hover > span {
   }
   /*PRIMER CONTENEDOR*/
   .section-container:last-of-type {
-    align-items: center;
     display: flex;
+    flex-direction: row;
     float: left;
+
   }
   
   .section-container {
@@ -309,14 +289,24 @@ nav > ul > li > a:hover > span {
     display: flex;
     width: min(39rem, calc(50% + 70px));
   }
+
+.imga{
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
   .last-container img{
     width: 150px;
       height: 150px;
-      display: inline-table;
-      border: solid 5px #2d2d2d;
-      align-items: center;
+      display: flex;
+      margin: 0;
+      vertical-align: center;
       align-content: center;
-      justify-content: center;
+      align-self: center;
+
   }
   .left {
     display: flex;
@@ -329,10 +319,22 @@ nav > ul > li > a:hover > span {
   .last-title {
     font-family: 'Poppins', sans-serif;
     color: black;
+    text-align: center;
     font-size: 3rem;
     font-weight: 500;
     line-height: 1.12;
     margin-bottom: 1rem;
+  }
+  
+  .last-title2 {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.12;
+    margin-bottom: 1rem;
+    margin-top: 40px;
   }
   
   .last-description {
@@ -345,11 +347,6 @@ nav > ul > li > a:hover > span {
   
   .last-big-title {
     align-items: center;
-    background: var(--white)
-    url('https://images.unsplash.com/photo-1537222961176-50d25fff78ef?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')
-    100% / cover no-repeat;
-    -webkit-background-clip: text;
-    background-clip: text;
     color: transparent;
     display: flex;
     font-size: 6rem;
@@ -362,28 +359,37 @@ nav > ul > li > a:hover > span {
     text-transform: uppercase;
     width: 100%;
   }
+
   .right{
-    margin-right: 20px;
-    animation: reciplanet2 1.2s ease;
-    border: 1px;
-    border-radius: 1rem;
     float: right;
-    width: min(50rem, calc(70% + 90px));
-    display: flex;
     flex: 1;
     flex-direction: column;
     margin-left: 3rem;
     padding: 2rem;
     background-color: #fafd5aa3; border-radius: 1rem;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+    margin-right: 20px;
+    animation: reciplanet2 1.2s ease;
+    backdrop-filter: blur(10px);
+    border: 1px;
+    border-radius: 1rem;
+    display: flex;
+    width: min(39rem, calc(50% + 70px));
   }
 
   .right img{
+    width: 300px;
+    height: 200px;
+    border: solid 2px #2d2d2d;
+    align-self: center;
+  }
+
+  .imga2{
     width: 100%;
-      height: 100%;
-      
-      border: solid 5px #2d2d2d;
-     
+    height: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
   }
   @keyframes reciplanet2{
     0% {
@@ -403,11 +409,13 @@ nav > ul > li > a:hover > span {
   
 }
   
-  
 /* FIN DEL BODY */
 /* FOOTER */
 
+
+
 footer{
+  margin-top:40px ;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -416,9 +424,9 @@ footer{
 .footer
 {
   margin-top: 20px;
-  min-height: 300px;
+  height: 100px;
   width: 100%;
-  background-color:#26272b;
+  background-color:black;
   padding:45px 0 20px;
   font-size:20px;
   line-height:24px;
@@ -447,12 +455,12 @@ footer{
 
 .text{
   margin: 0;
-
+  font-family: 'Poppins', sans-serif;
 }
 
 .cont1{
-  margin-top: 30px;
-
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
 }
 
 p{
@@ -461,6 +469,7 @@ p{
 }
 
 .cont3{
+  margin: 0;
   text-align: center;
   background-color:#26272b;
   color: white;
@@ -578,19 +587,19 @@ p{
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
-  background-image: url('https://us.123rf.com/450wm/alsstocks450/alsstocks4501911/alsstocks450191100111/136346945-voronezh-rusia-21-de-noviembre-de-2019-icono-redondo-del-logotipo-de-facebook-en-color-azul.jpg?ver=6') ;
+  background-image: url('../assets/iconfb.webp') ;
 }
 .instagram{
   background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png') ;
+  background-image: url('../assets/iconist.webp') ;
 }
 .twitter{
   background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
-  background-image: url('http://store-images.s-microsoft.com/image/apps.26737.9007199266244427.c75d2ced-a383-40dc-babd-1ad2ceb13c86.ed1d047e-03d9-4cd8-a342-c4ade1e58951') ;
+  background-image: url('../assets/icontwi.ed1d047e-03d9-4cd8-a342-c4ade1e58951') ;
 }
 
 .redes a.facebook:hover

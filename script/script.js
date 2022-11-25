@@ -4,29 +4,29 @@
     var $img = $("<img>");
     var $caption = $("<p class='caption'></p>");
   
-    // Add image and caption to lightbox
+    // Agregar imagen y título a la caja de luz
+
   
     $lightbox
       .append($img)
       .append($caption);
   
-    // Add lighbox to document
+    // Agregar caja de luz al documento
   
     $('body').append($lightbox);
   
     $('.lightbox-gallery img').click(function(e) {
       e.preventDefault();
   
-      // Get image link and description
+      // link de la imagen
       var src = $(this).attr("data-image-hd");
       var cap = $(this).attr("alt");
-  
-      // Add data to lighbox
+
   
       $img.attr('src', src);
       $caption.text(cap);
   
-      // Show lightbox
+      // Mostrar caja de luz
   
       $lightbox.fadeIn('fast');
   

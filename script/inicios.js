@@ -22,17 +22,17 @@ function ValidarDatos ( email, contrasena){
 }
 
 function ListarDatos(email, contrasena){
-    let emailUsu = localStorage.getItem('Email')
-    let contrasenaUsu = localStorage.getItem('Contraseña')
+    let emailUsu = localStorage.getItem('Email');
+    let contrasenaUsu = localStorage.getItem('Contraseña');
 
     if(emailUsu== email && contrasenaUsu == contrasena){
         swal({
-            title: "Reciplanet!",
-            text: "Bienvenido!",
+            title: "Bienvenido!",
+            text: "Reciplanet!",
             icon: "success",
             button: "continuar",
           });
-     window.location.href('index.html');
+          window.location.assign('index.html');
     }else{
           swal("Error", "Espacios en blanco", "error" );
         }  

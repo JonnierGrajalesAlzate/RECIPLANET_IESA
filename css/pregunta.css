@@ -3,7 +3,6 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
   }
   
   body {
@@ -14,7 +13,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url(https://static.vecteezy.com/system/resources/previews/003/581/045/non_2x/cartoon-scene-nature-with-sky-background-flat-nature-landscape-with-meadow-illustration-vector.jpg);
+    background-image: url(../assets/juego.jpg);
     display: flex;
     justify-content: center;
     align-items: center;

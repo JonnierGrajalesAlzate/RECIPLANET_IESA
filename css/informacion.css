@@ -1,12 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
-
 * {
     transition: all 0.3s;
     margin: 0px;
     padding: 0px;
 }
-
-
 
 body{
     background-position: center;
@@ -14,7 +10,6 @@ body{
     background-size: cover;
     background: white;
 }
-
 
 .todo{
     background-color:rgb(251, 251, 199);
@@ -203,7 +198,7 @@ footer{
   .footer
   {
     margin-top: 20px;
-    min-height: 300px;
+    height: 100px;
     width: 100%;
     background-color:#26272b;
     padding:45px 0 20px;
@@ -226,20 +221,21 @@ footer{
   }
   
   .reci{
-    min-height: 300px;
     width: 100%;
+    height: 100px;
     display: flex;
     justify-content: space-around;
   }
   
   .text{
     margin: 0;
+    font-family: 'Poppins', sans-serif;
   
   }
   
   .cont1{
-    margin-top: 30px;
-  
+    font-family: 'Poppins', sans-serif;
+    
   }
   
   p{
@@ -365,19 +361,19 @@ footer{
      background-position: center;
      background-size: cover;
      background-repeat: no-repeat;
-    background-image: url('https://us.123rf.com/450wm/alsstocks450/alsstocks4501911/alsstocks450191100111/136346945-voronezh-rusia-21-de-noviembre-de-2019-icono-redondo-del-logotipo-de-facebook-en-color-azul.jpg?ver=6') ;
+    background-image: url('../assets/iconfb.webp') ;
   }
   .instagram{
     background-position: center;
      background-size: cover;
      background-repeat: no-repeat;
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png') ;
+    background-image: url('../assets/iconist.webp') ;
   }
   .twitter{
     background-position: center;
      background-size: cover;
      background-repeat: no-repeat;
-    background-image: url('http://store-images.s-microsoft.com/image/apps.26737.9007199266244427.c75d2ced-a383-40dc-babd-1ad2ceb13c86.ed1d047e-03d9-4cd8-a342-c4ade1e58951') ;
+    background-image: url('../assets/icontwi.ed1d047e-03d9-4cd8-a342-c4ade1e58951') ;
   }
   
   .redes a.facebook:hover

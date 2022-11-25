@@ -68,7 +68,7 @@ let baseDePreguntas =
     pregunta: "¿Que debemos hacer si alguien arroja basuras el día que no corresponde?",
     respuesta: "Reportarlo",
     imagen: "https://www.municomas.gob.pe/resources/upload/slider/M7EG6GP7basura.jpg",
-    distractores: ["Felicitarlo", "Hacer lo mismo", "No hacer nada"],
+    distractores: ["Felicitarlo", "Hacer lo mismo", "No prestarle atención"],
   },
   {
     pregunta: "¿En cuál contenedor va el papel de cuaderno?",

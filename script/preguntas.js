@@ -43,7 +43,7 @@ async function seleccionarOpción(index) {
     puntaje++;
   } else {
     await Swal.fire({
-      title: "Respuesta Incorrecta",
+      title: "Respuesta errónea",
       html: `La respuesta correcta es ${objetoPregunta.respuesta}`,
       icon: "error",
     });
@@ -51,7 +51,7 @@ async function seleccionarOpción(index) {
   INDEX_PREGUNTA++;
   if (INDEX_PREGUNTA >= baseDePreguntas.length) {
     await Swal.fire({
-      title: "Reciplanet",
+      title: "RECIPLANET",
       text: `Tu puntaje fue de: ${puntaje}/${baseDePreguntas.length}`,
     });
     INDEX_PREGUNTA = 0;
