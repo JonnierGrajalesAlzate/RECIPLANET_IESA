@@ -48,6 +48,12 @@ nav ul {
   overflow:hidden;
   width:98%;
   position:relative;
+  background-image: url(../assets/liquid-cheese.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+border-radius: 10px;
+margin-bottom: 40px;
 }
 
 @keyframes reciplanet5 {
@@ -65,6 +71,10 @@ nav ul {
 
 #menu li a {
   color:#000;
+  display:flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 30%;
   font-family: 'Poppins', sans-serif;
   color: black;
   font-size: 30px;
@@ -102,9 +112,10 @@ nav > ul > li > a span {
 }
 /* CENTRAR ICONOS */
 nav > ul > li > a span .fa {
-  display:block;
-  padding:2em;
-  position:center;
+  width: 60%;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 /* ICONOS BAJEN AL PASAR EL PUNTERO */
 /* SE ACCEDE AL ELEMENTO a Y CUANDO PASEMOS EL
@@ -148,10 +159,8 @@ nav > ul > li > a:hover > span {
 
 .color2 {
   height: 70px;
-
-  width: 250px;
-
-    border-radius: 30px;
+  width: 200px;
+  border-radius: 30px;
   background-image: url(../assets/verde1.png);
   color: white;
   background-position: center;
@@ -161,7 +170,7 @@ nav > ul > li > a:hover > span {
 }
 .color3 {
   height: 70px;
-  width: 250px;
+  width: 200px;
     border-radius: 30px;
     background-image: url(../assets/blanco1.png);
   background-position: center;
@@ -169,7 +178,7 @@ nav > ul > li > a:hover > span {
 }
 .color4 {
   height: 70px;
-  width: 250px;
+  width: 200px;
     border-radius: 30px;
     background-image: url(../assets/negro1.png);
    color:white;
@@ -260,6 +269,7 @@ nav > ul > li > a:hover > span {
     display: flex;
     flex-direction: row;
     float: left;
+    margin-bottom: 50px;
 
   }
   
@@ -282,7 +292,7 @@ nav > ul > li > a:hover > span {
     margin-left: 20px;
     animation: reciplanet 1.2s ease;
     backdrop-filter: blur(10px);
-    background-color: #5da5a199;
+    background-color: #5da57399;
     border: 1px;
     border-radius: 1rem;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
@@ -447,7 +457,6 @@ footer{
 }
 
 .reci{
-  min-height: 300px;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -599,7 +608,7 @@ p{
   background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
-  background-image: url('../assets/icontwi.ed1d047e-03d9-4cd8-a342-c4ade1e58951') ;
+  background-image: url('../assets/twiter1.png') ;
 }
 
 .redes a.facebook:hover
