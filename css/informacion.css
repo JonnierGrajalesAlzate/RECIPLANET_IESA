@@ -7,8 +7,9 @@
 body{
     background-position: center;
     background-repeat: no-repeat;
+    background-image: url("../assets/info.svg");
+    background-attachment: fixed;
     background-size: cover;
-    background: white;
 }
 
 .todo{
@@ -19,7 +20,7 @@ body{
     margin-left: 10%; 
     margin-right:10%;
     width: 80%;
-    height: 80%;
+    height: 90%;
     align-content: center;
 }
 
@@ -185,6 +186,11 @@ img{
     margin-top: 30px;
     display: flex;
     justify-content: center;
+}
+
+.fotore{
+  width: 130px;
+  height: 130px;
 }
 
 

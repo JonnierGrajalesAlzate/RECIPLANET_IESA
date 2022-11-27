@@ -4,13 +4,12 @@ let formulario =  document.getElementById('form');
 
 formulario.addEventListener('submit', (e)=>{
     e.preventDefault();
-    LeerDatos()
+        LeerDatos()
 })
 
 function LeerDatos(){
     email = document.getElementById('email').value
     contrasena = document.getElementById('contrasena').value
-
     ValidarDatos(email, contrasena)
 }
 

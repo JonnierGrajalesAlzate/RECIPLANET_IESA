@@ -4,10 +4,11 @@
 }
 
 body{
-  background-color: white;
+  background-image: url("../assets/index.svg");
+  background-attachment: fixed;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   overflow-x: hidden;
 }
 
@@ -44,7 +45,6 @@ nav ul {
 #menu {
   justify-content: space-around;
   display:table;
-  animation: reciplanet5 5s ease;
   overflow:hidden;
   width:98%;
   position:relative;
@@ -57,16 +57,17 @@ margin-bottom: 40px;
 }
 
 @keyframes reciplanet5 {
-  0%{
-    transform: translateX(-100);
-  }
-  100%{
-    transform: translateX(0);
-  }
+  0% {
+    opacity: 0;
+}
+100%{
+    opacity: 1;
+}
 }
 
 #menu li {
   display:table-cell;
+  animation: reciplanet5 0.7s ease-in;
 } /* COLOCA MENU EN CELDAS */
 
 #menu li a {
