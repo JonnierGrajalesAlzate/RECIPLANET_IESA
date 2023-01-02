@@ -18,10 +18,7 @@ body{
 
 .menu-horizontal{
   background-color: rgb(5, 140, 0);
-  height: 100px;
-  width: 100%;
   list-style: none;
-
 }
 
 .menu-horizontal > li a{
@@ -43,7 +40,7 @@ body{
   background-size: cover;
   font-size: 40px;
   color: black;
-  background: gold;
+
   font-family: 'Poppins', sans-serif;
 }
 
