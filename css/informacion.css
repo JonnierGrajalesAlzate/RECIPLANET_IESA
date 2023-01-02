@@ -8,11 +8,8 @@
   --main-padding: 5px;
 }
 
-body {
-  font-family: 'Poppins', sans-serif;
-}
 
-body{
+body{font-family: 'Poppins', sans-serif;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url("../assets/info.svg");

@@ -31,6 +31,7 @@ min-height: 250px;
 display: flex;
 flex-direction: column;
 justify-content: center;
+margin-right: 5em;
 }
 
 .cabeza li a{
@@ -53,6 +54,40 @@ h1 {
   text-transform: uppercase;
   width: 100%;
   animation: letras linear 5000ms infinite;  
+}
+
+
+@media only screen and (max-width: 520px) {
+  li.btn .submitBtn { 
+    width: 200px;
+  padding: 20px 20px;
+  background-color:  rgb(0, 255, 106);
+  color: black;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  border: 3px solid black;
+  font-family: 'Poppins', sans-serif;
+    
+  }
+
+  li h1{
+    margin-left: 0.5em;
+  }
+
+  li.btn .submitBtn1 {
+    width: 200px;
+    padding: 20px 20px;
+    background-color: white;
+    color: black;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+    border: 3px solid black;
+    font-family: 'Poppins', sans-serif;
+  }
+
 }
 
 @keyframes letras {

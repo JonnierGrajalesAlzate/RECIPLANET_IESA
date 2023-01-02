@@ -437,6 +437,7 @@ p{
     justify-content: space-around;
     height: 100px;
   }
+  
 }
 
 @media only screen and (max-width: 810px) {
@@ -674,4 +675,6 @@ a {
       font-weight:600
     }
   }
+  
+
   
