@@ -3,6 +3,7 @@
     margin: 0px;
     padding: 0px;
 }
+<<<<<<< HEAD
 :root {
   --main-radius: 5px;
   --main-padding: 5px;
@@ -10,6 +11,27 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+=======
+
+body{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../assets/info.svg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.todo{
+    background-color:rgb(251, 251, 199);
+    border: solid 3px black;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 10%; 
+    margin-right:10%;
+    width: 80%;
+    height: 90%;
+    align-content: center;
+>>>>>>> b55c2126dc7b48387c1fc7f79623c10acd7c6378
 }
 
 
@@ -139,6 +161,11 @@ min-height: 180px;
     opacity: 1;
     transform: translateX(0);
 }
+}
+
+.fotore{
+  width: 130px;
+  height: 130px;
 }
 
 
@@ -383,6 +410,7 @@ p{
     margin-right:0;
     font-weight:600
   }
+<<<<<<< HEAD
 }
 
 
@@ -406,4 +434,77 @@ a {
       "footer";
   }
 }
+=======
+  .redes a{
+    background-color:#eceeef;
+    color:#818a91;
+    font-size:16px;
+    display:inline-block;
+    line-height:44px;
+    width:44px;
+    height:44px;
+    text-align:center;
+    margin-right:8px;
+    border-radius:100%;
+    -webkit-transition:all .2s linear;
+    -o-transition:all .2s linear;
+    transition:all .2s linear
+  }
+  .redes a:active,.redes a:focus,.redes a:hover
+  {
+    color:#fff;
+    background-color:#29aafe
+  }
+  .redes.size-sm a
+  {
+    line-height:34px;
+    height:34px;
+    width:34px;
+    font-size:14px
+  }
+  
+   .facebook{
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+    background-image: url('../assets/iconfb.webp') ;
+  }
+  .instagram{
+    background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+    background-image: url('../assets/iconist.webp') ;
+  }
+  .twitter{
+    background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+    background-image: url('../assets/twiter1.png') ;
+  }
+  
+  .redes a.facebook:hover
+  {
+    opacity: 0.5;
+  }
+  .redes a.instagram:hover
+  {
+    opacity: 0.5;
+  }
+  
+  .redes a.twitter:hover
+  {
+    opacity: 0.5;
+  }
+  @media (max-width:767px)
+  {
+    .redes li.title
+    {
+      display:block;
+      margin-right:0;
+      font-weight:600
+    }
+  }
+  
+  
+>>>>>>> b55c2126dc7b48387c1fc7f79623c10acd7c6378
 
