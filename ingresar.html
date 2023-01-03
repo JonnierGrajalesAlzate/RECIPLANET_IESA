@@ -1,48 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/icons8-signo-de-reciclaje-50.png">
     <link rel="stylesheet" href="./css/ingresar.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./assets/icons8-signo-de-reciclaje-50.png">
-    <title>Inicio de sesión-Reciplanet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InicioDeSesión-Reciplanet</title>
 </head>
-
 <body>
-    <header>
-        <nav>
-            <ul class="menu">
-                <li class="lista"><a href="./intro.html">Regresar</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <div class="todo">
-         <form  class="form" id="form" >
-            <h1 class="titulo">Inicio de sesión</h1>
-            <div class="imagen"><img src="./assets/escud.png" alt=""></div>
-            <div class="inputContenedor">
-                <input type="email" class="input" id="email" placeholder="a" required>
-                <label for="inputEmail" class="label">Email</label>
-            </div>
-               <div class="inputContenedor">
-                   <input type="password" id="contrasena" class="input" placeholder="a" required>
-                   <label for="inputPassword" class="label">Contraseña</label>
-               </div>
-
-            <div class="check">
-            
-                <label for="contenidocheck" class="lbel">Recordar Contraseña</label>
-                <input type="checkbox" class="verificacion" id="check">
-            </div>
-            <input type="submit" id="submit" class="boton"value="Ingresar">
-        </form>
-
-        <script src="./script/inicios.js"></script>
-        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <div class="Contenedor-padre">
+        <div class="info-contenedor">
+          <h1 class="title">Iniciar Sesión</h1>
+          <div class="redes">
+              <div class="redes-element" >
+                  <img src="./assets/flecha re.png" alt="">
+                  <a class="link" href="./intro.html">Volver</a>
+              </div>
+          </div>
+          <form class="contenedores-input" id="form">
+              
+              <input class="input" type="email" placeholder="Email" id="email" required>
+              <input class="input" type="password" placeholder="Contraseña" id="contrasena" required>
+              <p>¿Olvidaste tu contraseña? <span class="span">Click aquí</span></p>
+              <button type="submit" id="submit" value="registrarme" class="btn">Ingresar</button>
+          </form>
+        </div>
+          <img class="contenedor-imagen" src="./assets/colegio21.jpg" alt="colegio santa elena">
+    </div>
+    <script src="./script/inicios.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
 </body>
-
 </html>

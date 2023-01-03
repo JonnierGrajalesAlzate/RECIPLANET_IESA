@@ -7,21 +7,40 @@
 
  
 <body>
-    <div class="container">
-        <div class="user-image">
-            <img src="./assets/user.png" alt="Usuario">
-        </div>
-        <div class="content">
-            <h3 class="name">Nombre del usuario</h3>
-            <p class="username">usuario1@gmail.com</p>
-            <p class="puntaje">
-                Puntaje: 000
-            </p>
-            <a class="regresar" href="./index.html">Regresar</a>
-            <a class="regresar"   href="./intro.html">Cerrar sesión</a>
-        </div>
+    <!-- Canvas -->
+<canvas class="orb-canvas"></canvas>
+<!-- Overlay -->
+<div class="overlay">
+  <!-- Overlay inner wrapper -->
+  <div class="overlay__inner">
+    <!-- Title --><div class="reci">
+    <h1 class="overlay__title">
+      RECIPLANET
+      <span class="text-gradient"></span> SANTA ELENA
+    </h1>
+    
+        <img src="./assets/user.png" alt="">
     </div>
+    <!-- Description -->
+    <p class="overlay__description">
+      RECIPLANET CREADA 2023
+    BY: 8 DE MARZO</strong>
+    </p>
+    <!-- Buttons -->
+    <div class="overlay__btns">
 
+      <button class="overlay__btn overlay__btn--transparent">
+        <a href="./index.html" target="_blank"> VOLVER </a>
+      </button>
+
+      <button class="overlay__btn overlay__btn--colors">
+        <a href="./intro.html" target="_blank"> CERRAR SESIÓN </a>
+        <span class="overlay__btn-emoji"></span>
+      </button>
+    </div>
+  </div>
+</div>
+<script src="./script/user.js"></script>
 </body>
  
 </html>

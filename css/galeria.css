@@ -131,7 +131,7 @@ main {
 .overlay h2{
   color: #fff;
   font-weight: 300;
-  font-size:30px;
+  font-size:2em;
   position: absolute;
   top: 50%;
   left:50%;
@@ -174,7 +174,6 @@ main {
 
 
 
-
 footer {
   grid-area: footer;
   border-radius: var(--main-radius);
@@ -186,6 +185,7 @@ footer {
 
 .footer
 {
+  margin-bottom: 0;
   background-color:#26272b;
   padding:45px 0 20px;
   font-size:20px;
@@ -212,8 +212,7 @@ footer {
   height: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
 }
 
 .text{
@@ -224,8 +223,6 @@ footer {
 
 .cont1{
   font-family: 'Poppins', sans-serif;
-  margin: 0;
-  margin: au;
   
 }
 
@@ -249,19 +246,24 @@ p{
     justify-content: space-around;
     height: 100px;
   }
-
 }
+ @media screen and (min-width:2100px) {
+  .imge{
+    height: 350px;
+    width: 350px;
+  }
 
-@media only screen and (max-width: 810px) {
-  .menu-horizontal {
-     flex-direction: column;
-     display: flex;
-     justify-content: center;
-   }
+  .fotos{
+    margin-right: 4em;
+    margin-left: 4em;
+  }
+
+  .fotore{
+    height: 300px;
+    width: 300px;
+  }
+  
  }
-
-
-
 .email
 {
   padding-left:0;
@@ -295,14 +297,13 @@ p{
 
 .cont2 h6{
   text-align: center;
-  border-bottom: 0px;
+  display: none;
   
 }
 
-
 .redes
 {
-  align-items: flex-end;
+
   padding-left:0;
   margin-bottom:0;
   list-style:none
@@ -394,6 +395,17 @@ a {
   margin: 1rem;
 }
 
+@media only screen and (max-width: 1500px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 3.8fr 3.2fr  0.8fr;
+    grid-template-areas:
+      "nav"
+      "sidebar"
+      "main"
+      "footer";
+  }
+}
 
   .redes a{
     background-color:#eceeef;
@@ -465,3 +477,6 @@ a {
     }
   }
   
+  .cont2{
+    margin-bottom: 2em;
+  }

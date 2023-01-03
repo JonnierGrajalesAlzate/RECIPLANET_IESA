@@ -146,9 +146,9 @@ justify-content: center;
 }
 
 .imga img{
-  width: 500px;
-  height: 500px;
-  margin-bottom: 1em;
+  width: 400px;
+  height: 400px;
+  margin: 1em;
 }
 
 .last-container img{

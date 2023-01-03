@@ -10,49 +10,33 @@
     <title>Registro-Reciplanet</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="menu">
-                <li class="lista"><a href="./intro.html">Regresar</a></li>
-                
-            </ul>
-        </nav>
-    </header>
 
-    <div class="todo">
-        <form  class="form" id="form">
-            <h1 class="titulo">Registro</h1>
-            <div class="imagen"><img src="./assets/escud.png" alt=""></div>
-           <div class="inputContenedor">
-               <input type="text" class="input" placeholder="a" id="nombre" required>
-               <label for="" class="label">Nombre Completo</label>
-           </div>
-
-        <div class="inputContenedor">
-            <input type="email" class="input" id="email" placeholder="a" required>
-            <label for="inputEmail" class="label">Email</label>
+    <div class="Contenedor-padre">
+        <div class="info-contenedor">
+          <h1 class="title">Regístrate</h1>
+          <div class="redes">
+              <div class="redes-element">
+                  <img src="./assets/gg.png" alt="google-image">
+                  <a class="link" href="#">Google</a>
+              </div>
+              <div class="redes-element" >
+                  <img src="./assets/flecha re.png" alt="">
+                  <a class="link" href="./intro.html">Volver</a>
+              </div>
+          </div>
+          <form class="contenedores-input" id="form">
+              <input class="input" type="text" placeholder="Nombre completo" id="nombre" required>
+              <input class="input" type="email" placeholder="Email" id="email" required>
+              <input class="input" type="password" placeholder="Contraseña" id="contrasena" required>
+              <input class="input" type="password" placeholder="Confirmar contraseña" id="Rcontrasena" required>
+              <p>¿Olvidaste tu contraseña? <span class="span">Click aquí</span></p>
+              <button type="submit" id="submit" value="registrarme" class="btn">Regístrar</button>
+          </form>
         </div>
-           <div class="inputContenedor">
-               <input type="password" id="contrasena" class="input" placeholder="a" required>
-               <label for="inputPassword" class="label">Contraseña</label>
-           </div>
-
-           <div class="inputContenedor">
-            <input type="password" id="Rcontrasena" class="input" placeholder="a" >
-            <label for="inputPassword" class="label">Confirmar Contraseña</label>
-        </div>
-
-        <div class="check">
-            
-            <label for="contenidocheck" class="lbel">Recordar Contraseña</label>
-            <input type="checkbox" class="verificacion" id="check">
-        </div>
-           
-
-           <input type="submit" class="submitBtn"  id="submit" value="Registrarme">
-       </form>
-
-       <script src="./script/registro.js"></script>
-       <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+          <img class="contenedor-imagen" src="./assets/colegio21.jpg" alt="colegio santa elena">
+    </div>
+    <script src="./script/registro.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
 </body>
 </html>
