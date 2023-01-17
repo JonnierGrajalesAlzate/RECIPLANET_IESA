@@ -20,6 +20,7 @@ background-size: cover;
   flex-direction: column;
    justify-content: center;
    align-items: center;
+   overflow: hidden;
 }
 
 .cabeza{
