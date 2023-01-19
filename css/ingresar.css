@@ -24,7 +24,7 @@ background-position: center;
 .Contenedor-padre {
 height: 43.75em;
 width: 60em;
-margin: 6em auto;
+margin: 0;
 border-radius: 10px;
 display: flex;
 justify-content: space-between;
@@ -220,10 +220,6 @@ list-style: none;
     margin-bottom: 0.5em;
     }
 
-
-    .title{
-      display: none;
-    }
   
   .contenedor-imagen {
    display: none;
@@ -278,10 +274,6 @@ list-style: none;
       }
   
   
-      .title{
-        display: none;
-      }
-    
     .contenedor-imagen {
      display: none;
     }  
@@ -344,9 +336,6 @@ list-style: none;
     }
 
 
-    .title{
-      display: none;
-    }
   
   .contenedor-imagen {
    display: none;
