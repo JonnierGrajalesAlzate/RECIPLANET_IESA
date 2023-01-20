@@ -26,6 +26,7 @@ body{
   width: 100vw;
   display: grid;
   grid-area: nav;
+  position: relative;
   animation: reciplanet7 .4s;
 }
 
@@ -84,7 +85,7 @@ body{
 
 
 .toggle{
-  position: fixed;
+  position: absolute;
   left: 20px;
   cursor: pointer;
   color: black;
@@ -111,7 +112,7 @@ body{
 
   .nav-menu{
     padding: 20px 0;
-
+    justify-content: flex-start;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -121,9 +122,9 @@ body{
     right: 0;
     top: 60px;
     color: white;
-    width: 50%;
+    width: 100%;
     padding: 20px 0;
-    height: calc(50% - 60px);
+    height: 100%;
     overflow-y: auto;
     left: -100%;
     transition: left 0.3s;
@@ -141,6 +142,22 @@ body{
 
   .toggle{
     display: block;
+  }
+
+
+  .toggle:active{
+    transition: .3s;
+    transform: translate(0);
+    height: 60px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    position: fixed
+    ;
+  }
+
+  .toggle::after{
+    background: none;
   }
 
   .nav-menu_visible{
