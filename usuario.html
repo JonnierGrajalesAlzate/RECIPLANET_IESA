@@ -1,33 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./assets/icons8-signo-de-reciclaje-50.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/usuario.css">
-    <title>Reciplanet-usuario</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil - Reciplanet</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/usuario.css">
 </head>
+
 <body>
-  <div class="div">
-    <div class="contenedor">
-      <div class="dgrid">
-      <div class="img">
-       <img src="./assets/user.png" alt=""></div>
-          <div class="info">
-            <h2>Nombre: .....</h2>
-            <h2>gmail: ...@.</h2>
-            <h2>puntos: ..</h2>
-          </div>
-          <ul class="botones">
-                <li class="btn"><form action="./index.html"><input type="submit" class="submitBtn" value="regresar"></form></li>
-                <li class="btn"><form action="./intro.html"><input type="submit" class="submitBtn1" value="cerrar sesión"></form></li></div>
-          </ul>
+
+  <div class="perfil-container">
+
+    <!-- CARD -->
+    <div class="perfil-card">
+
+      <!-- IMAGEN -->
+      <div class="perfil-img">
+        <img src="./assets/user.png" alt="Usuario">
+      </div>
+
+      <!-- INFO -->
+      <div class="perfil-info">
+        <h2 id="nombre">👤 Nombre: Jonnier</h2>
+        <p id="email">📧 Email: ejemplo@gmail.com</p>
+        <p id="puntos">🏆 Puntos: 0</p>
+      </div>
+
+      <!-- BOTONES -->
+      <div class="perfil-botones">
+        <a href="./index.html" class="btn volver">⬅ Volver</a>
+        <a href="./intro.html" class="btn logout">🚪 Cerrar sesión</a>
+      </div>
 
     </div>
+
   </div>
 
 </body>
- 
 </html>
