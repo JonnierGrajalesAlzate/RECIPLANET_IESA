@@ -1,70 +1,106 @@
 let INDEX_PREGUNTA = 0;
 let puntaje = 0;
+let bloqueado = false;
 
 cargarPregunta(INDEX_PREGUNTA);
 
 function cargarPregunta(index) {
-  objetoPregunta = baseDePreguntas[index];
+  bloqueado = false;
 
-  opciones = [...objetoPregunta.distractores];
+  const objetoPregunta = baseDePreguntas[index];
+
+  let opciones = [...objetoPregunta.distractores];
   opciones.push(objetoPregunta.respuesta);
-  for (let i = 0; i < 4; i++) {
-    opciones.sort(() => Math.random() - 0.5);
-  }
 
-  document.getElementById("pregunta").innerHTML = objetoPregunta.pregunta;
+  // Mezclar opciones
+  opciones.sort(() => Math.random() - 0.5);
+
+  // Pregunta
+  document.getElementById("pregunta").innerText = objetoPregunta.pregunta;
+
+  // Imagen
+  const img = document.getElementById("imagen");
   if (objetoPregunta.imagen) {
-    document.getElementById("imagen").src = objetoPregunta.imagen;
-    document.getElementById("imagen").style.display = "";
+    img.src = objetoPregunta.imagen;
+    img.style.display = "block";
   } else {
-    document.getElementById("imagen").style.display = "none";
+    img.style.display = "none";
   }
 
-  if (objetoPregunta.ayuda) {
-    document.getElementById("ayuda").style.display = "";
-  } else {
-    document.getElementById("ayuda").style.display = "none";
-  }
+  // Botón ayuda
+  document.getElementById("ayuda").style.display = objetoPregunta.ayuda ? "inline-block" : "none";
 
-  document.getElementById("opcion-1").innerHTML = opciones[0];
-  document.getElementById("opcion-2").innerHTML = opciones[1];
-  document.getElementById("opcion-3").innerHTML = opciones[2];
-  document.getElementById("opcion-4").innerHTML = opciones[3];
+  // Opciones
+  const botones = document.querySelectorAll(".option");
+
+  botones.forEach((btn, i) => {
+    btn.innerText = opciones[i];
+    btn.classList.remove("correcto", "incorrecto");
+    btn.dataset.correcto = opciones[i] === objetoPregunta.respuesta;
+  });
 }
 
+/* SELECCIONAR OPCIÓN */
 async function seleccionarOpción(index) {
-  let validezRespuesta = opciones[index] == objetoPregunta.respuesta;
-  if (validezRespuesta) {
-    await Swal.fire({
-      title: "Respuesta correcta",
-      text: "La respuesta es correcta",
-      icon: "success",
-    });
+  if (bloqueado) return;
+  bloqueado = true;
+
+  const botones = document.querySelectorAll(".option");
+  const seleccion = botones[index];
+  const esCorrecta = seleccion.dataset.correcto === "true";
+
+  // Mostrar colores
+  botones.forEach(btn => {
+    if (btn.dataset.correcto === "true") {
+      btn.classList.add("correcto");
+    } else {
+      btn.classList.add("incorrecto");
+    }
+  });
+
+  if (esCorrecta) {
     puntaje++;
+    await Swal.fire({
+      title: "✅ Correcto",
+      text: "¡Bien hecho!",
+      icon: "success",
+      timer: 1200,
+      showConfirmButton: false
+    });
   } else {
     await Swal.fire({
-      title: "Respuesta errónea",
-      html: `La respuesta correcta es ${objetoPregunta.respuesta}`,
+      title: "❌ Incorrecto",
+      text: "Sigue intentando 💪",
       icon: "error",
+      timer: 1500,
+      showConfirmButton: false
     });
   }
+
   INDEX_PREGUNTA++;
+
   if (INDEX_PREGUNTA >= baseDePreguntas.length) {
     await Swal.fire({
-      title: "RECIPLANET",
-      text: `Tu puntaje fue de: ${puntaje}/${baseDePreguntas.length}`,
+      title: "🎉 Juego terminado",
+      html: `Tu puntaje fue:<br><b>${puntaje}/${baseDePreguntas.length}</b>`,
+      icon: "info"
     });
+
     INDEX_PREGUNTA = 0;
     puntaje = 0;
   }
+
   cargarPregunta(INDEX_PREGUNTA);
 }
 
+/* AYUDA */
 function ayuda() {
+  const objetoPregunta = baseDePreguntas[INDEX_PREGUNTA];
+
   Swal.fire({
-    title: "Ayuda",
+    title: "💡 Ayuda",
     text: objetoPregunta.ayuda,
     imageUrl: objetoPregunta.ayudaImg,
-    imageHeight: 300,
+    imageHeight: 200,
   });
 }

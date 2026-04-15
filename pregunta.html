@@ -1,47 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="./css/pregunta.css">
-<link rel="shortcut icon" href="./assets/icons8-signo-de-reciclaje-50.png">
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-<title>Pregunta2-ReciPlanet</title>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/pregunta.css">
+
+  <link rel="shortcut icon" href="./assets/icons8-signo-de-reciclaje-50.png">
+
+  <title>Quiz | Reciplanet 🌱</title>
+</head>
 
 <body>
-     <div id="tablero-de-juego">
-          <div id="encabezado">
-               <ul class="menu-horizontal">
-                    <li><a href="./index.html" id="selector">Regresar</a></li>
-                </ul>
-                <a id="ayuda" class="btn btn-info" onclick="ayuda()">
-                     Ayuda
-               </a>
-               <br>
-               <span id="pregunta">Aquí va la pregunta</span>
-               <br>
-               <img id="imagen" src="./assets/escud.png" style="width: 90%;height: 200px;object-fit: contain;">
-          </div>
 
-          <div class="opcion" id="opcion-1" onclick="seleccionarOpción(0)"> Opción 1</div>
+  <!-- NAV -->
+  <header class="header">
+    <nav class="nav container">
+      <h1 class="logo">🌱 Quiz Reciplanet</h1>
+      <a href="./index.html" class="btn-back">
+        <i class="fas fa-arrow-left"></i> Volver
+      </a>
+    </nav>
+  </header>
 
+  <!-- QUIZ -->
+  <section class="quiz container">
 
-          <div class="opcion" id="opcion-2" onclick="seleccionarOpción(1)"> Opción 2</div>
+    <!-- HEADER QUIZ -->
+    <div class="quiz-header">
+      <button id="ayuda" class="btn-help">
+        <i class="fas fa-circle-question"></i> Ayuda
+      </button>
 
+      <h2 id="pregunta">Aquí va la pregunta</h2>
 
-          <div class="opcion" id="opcion-3" onclick="seleccionarOpción(2)"> Opción 3</div>
+      <img id="imagen" src="./assets/escud.png" alt="Imagen pregunta">
+    </div>
 
+    <!-- OPCIONES -->
+    <div class="options">
+      <button class="option" data-index="0">Opción 1</button>
+      <button class="option" data-index="1">Opción 2</button>
+      <button class="option" data-index="2">Opción 3</button>
+      <button class="option" data-index="3">Opción 4</button>
+    </div>
 
-          <div class="opcion" id="opcion-4" onclick="seleccionarOpción(3)"> Opción 4</div>
-     </div>
-     
+  </section>
 
+  <!-- LIBRERÍAS -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.0/dist/sweetalert2.all.min.js"></script>
-     <script src="./script/pregunta2.js"></script>
-     <script defer src="./script/preguntas.js"></script>
+  <!-- JS -->
+  <script src="./script/pregunta2.js"></script>
+  <script src="./script/preguntas.js"></script>
+
+  <!-- SCRIPT MODERNO -->
+  <script>
+    const opciones = document.querySelectorAll(".option");
+
+    opciones.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const index = btn.getAttribute("data-index");
+        seleccionarOpción(index);
+      });
+    });
+
+    document.getElementById("ayuda").addEventListener("click", ayuda);
+  </script>
 
 </body>
-
 </html>
