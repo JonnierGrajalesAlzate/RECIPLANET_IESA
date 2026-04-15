@@ -1,109 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-                      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/icons8-signo-de-reciclaje-50.png">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/galeria.css">
-        <title>Reciplanet-galería</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/galeria.css">
+
+  <link rel="shortcut icon" href="./assets/icons8-signo-de-reciclaje-50.png">
+
+  <title>Galería | Reciplanet 🌱</title>
 </head>
+
 <body>
-<div class="container">
-       <nav>
-            <ul class="menu-horizontal">
-                <li><a href="./index.html" id="selector">Regresar</a></li>
-            </ul>   </nav> 
-  
-    <main>
-      <div class="galeria">
-        <h1>Galeria Reciplanet</h1>
-        <div class="linea"></div>
-        <div class="contenedor-imagenes">
-            <div class="imagen">
-                <img src="./assets/aves_basura.jpg" alt="basura">
-                <div class="overlay">
-                    <h2>Los animales aéreos comen residuos</h2>
-                </div>
-            </div>
-            <div class="imagen">
-                <img src="./assets/foca_con_basura.jpg" alt="foca">
-                <div class="overlay">
-                    <h2>Foca lastimada por contaminación en los mares</h2>
-                </div>
-            </div>
-            <div class="imagen">
-                <img src="./assets/huerta.png" alt="huerta">
-                <div class="overlay">
-                    <h2>Huerta en la I.E Santa Elena</h2>
-                </div>
-            </div>
-            <div class="imagen">
-                <img src="./assets/huerta2.png" alt="huerta">
-                <div class="overlay">
-                    <h2>Huerta en la I.E Santa Elena</h2>
-                </div>
-            </div>
-            <div class="imagen">
-                <img src="./assets/huerta3.png" alt="huerta">
-                <div class="overlay">
-                    <h2>Huerta en la I.E Santa Elena</h2>
-                </div>
-            </div>
-            <div class="imagen">
-                <img src="./assets/blanca.png" alt="cont blanco">
-                <div class="overlay">
-                    <h2>Contenedor blanco: residuos aprovechable</h2>
-                </div>
-            </div>
-            <div class="imagen">
-                <img src="./assets/negra.png" alt="cont negra">
-                <div class="overlay">
-                    <h2>Contenedor negro: residuos no aprovechable</h2>
-                </div>
-            </div>
-            
-            <div class="imagen">
-                <img src="./assets/verde.png" alt="cont verde">
-                <div class="overlay">
-                    <h2>Contenedor verde: residuos organicos</h2>
-                </div>
-            </div>
-            <div class="imagen">
-                <img src="./assets/quebrada.jpg" alt="quebrada santa elena">
-                <div class="overlay">
-                    <h2>Quebrada de Santa Elena</h2>
-                </div>
-            </div>
+
+  <!-- NAVBAR SIMPLE -->
+  <header class="header">
+    <nav class="nav container">
+      <h1 class="logo">🌱 Reciplanet</h1>
+      <a href="./index.html" class="btn-back">
+        <i class="fas fa-arrow-left"></i> Volver
+      </a>
+    </nav>
+  </header>
+
+  <!-- GALERÍA -->
+  <section class="gallery container">
+    <h2>📸 Galería Reciplanet</h2>
+    <p class="subtitle">Conciencia ambiental a través de imágenes</p>
+
+    <div class="grid-gallery">
+
+      <!-- ITEM -->
+      <div class="card">
+        <img src="./assets/aves_basura.jpg" alt="">
+        <div class="overlay">
+          <p>Los animales aéreos comen residuos</p>
         </div>
-   </main>
+      </div>
 
-     
-<footer class="footer">
-<div class="reci">
-  <div class="text">
-      <h6>Reciplanet</h6>
-      <p>I.E Santa Elena.</p>
-    </div>
-    
-
-    <div class="cont1">
-      <h6>Email de contacto</h6>
-      <ul class="email">
-        <li>reciplanetiese@gmail.com</a></li>
-      </ul>
-    </div>
-
-    <div class="cont2">
-      <h6>Redes sociales</h6>
-          <ul class="redes">
-            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
-            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-          </ul>
+      <div class="card">
+        <img src="./assets/foca_con_basura.jpg" alt="">
+        <div class="overlay">
+          <p>Foca afectada por la contaminación</p>
         </div>
-</div>
-</footer>   
+      </div>
+
+      <div class="card">
+        <img src="./assets/huerta.png" alt="">
+        <div class="overlay">
+          <p>Huerta en la I.E Santa Elena</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./assets/huerta2.png" alt="">
+        <div class="overlay">
+          <p>Huerta en la institución</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./assets/huerta3.png" alt="">
+        <div class="overlay">
+          <p>Cultivos sostenibles</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./assets/blanca.png" alt="">
+        <div class="overlay">
+          <p>Contenedor blanco: reciclables</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./assets/negra.png" alt="">
+        <div class="overlay">
+          <p>Contenedor negro: no reciclables</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./assets/verde.png" alt="">
+        <div class="overlay">
+          <p>Contenedor verde: orgánicos</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./assets/quebrada.jpg" alt="">
+        <div class="overlay">
+          <p>Quebrada Santa Elena</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container container">
+
+      <div>
+        <h3>Reciplanet</h3>
+        <p>I.E Santa Elena</p>
+      </div>
+
+      <div>
+        <h3>Contacto</h3>
+        <p>reciplanetiese@gmail.com</p>
+      </div>
+
+      <div>
+        <h3>Redes</h3>
+        <div class="socials">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="copy">© 2026 Reciplanet</p>
+  </footer>
+
 </body>
 </html>
