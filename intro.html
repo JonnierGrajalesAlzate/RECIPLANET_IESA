@@ -1,23 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/icons8-signo-de-reciclaje-50.png">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/intro.css">
-    <title>RECIPLANET</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reciplanet</title>
+<link rel="stylesheet" href="./css/intro.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-    <header>
-        <main>
-            <ul class="cabeza">
-                <li><h1>RECIPLANET</h1></li>
-                <li class="btn"><form action="./ingresar.html"><input type="submit" class="submitBtn" value="Inicia sesión"></form></li>
-                <li class="btn"><form action="./registrarse.html"><input type="submit" class="submitBtn1" value="Regístrate"></form></li>
-            </ul>
-        </main>
-    </header>
+
+<div class="container" id="container">
+
+  <!-- PANEL -->
+  <div class="panel">
+    <h1>RECIPLANET 🌱</h1>
+    <p>Cuida el planeta, empieza contigo</p>
+
+    <button onclick="mostrarLogin()">Iniciar sesión</button>
+    <br><br>
+    <button onclick="mostrarRegistro()">Registrarse</button>
+  </div>
+
+  <!-- FORMULARIOS -->
+  <div class="forms">
+
+    <!-- LOGIN -->
+    <div class="form" id="login">
+      <h2>Iniciar Sesión</h2>
+
+      <input class="input" type="email" placeholder="Email">
+      <input class="input" type="password" placeholder="Contraseña">
+
+      <p>¿Olvidaste tu contraseña?</p>
+
+      <button class="btn" id="btnLogin">Ingresar</button>
+    </div>
+
+    <!-- REGISTRO -->
+    <div class="form" id="register">
+      <h2>Crear Cuenta</h2>
+
+      <input class="input" type="text" placeholder="Nombre completo">
+      <input class="input" type="email" placeholder="Email">
+      <input class="input" type="password" placeholder="Contraseña">
+      <input class="input" type="password" placeholder="Confirmar contraseña">
+
+      <button class="btn" id="btnRegister">Registrarse</button>
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+const container = document.getElementById("container");
+
+function mostrarRegistro(){
+  container.classList.add("active");
+}
+
+function mostrarLogin(){
+  container.classList.remove("active");
+}
+
+// 🔥 REDIRECCIÓN A INDEX
+
+document.getElementById("btnLogin").addEventListener("click", function(){
+  window.location.href = "./index.html";
+});
+
+document.getElementById("btnRegister").addEventListener("click", function(){
+  window.location.href = "./index.html";
+});
+</script>
+
 </body>
 </html>
